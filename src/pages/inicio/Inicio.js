@@ -8,7 +8,7 @@ const Inicio = () => {
       <div className="website-logo">
         <img
           src={require("../../assets/images/golden-ball.png")}
-          alt="logo de manignue bola"
+          alt="logo de maningnue bola"
         />
       </div>
       <div className="inicio-txt">
