@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.eqcard {
+  display: flex;
+  border: 3px solid red;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center; /**/
+  width: 250px;
+  background-color: rgb(28, 154, 238);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.5s ease;
+  box-shadow: 0 4px 6px black;
+}
+.eqcard img {
+  width: 100%; /* Image takes the full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd;
+}
+
+.eqcard h3 {
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: underline solid rgb(255, 255, 255) 1px;
+}
+.eqcard:hover {
+  transform: scale(1.1);
+  border: 3px solid green;
+}

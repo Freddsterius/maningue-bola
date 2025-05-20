@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.jogadores-table-container {
+  height: auto;
+  margin-bottom: 50px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.jogadores-container h1 {
+  display: inline-flex;
+  width: 80vw;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  /* text-decoration: underline solid;*/
+  font-size: 2.5rem;
+  border: 1.5px solid red;
+}
+
+.jogadores-table {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px black;
+  background-color: silver;
+}
+.jogadores-table th,
+.jogadores-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid grey;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  font-size: 0.8rem;
+}
+.jogadores-table th {
+  background-color: rgb(255, 47, 47);
+  color: white;
+  font-weight: bold;
+}
+.jogadores-table tr:hover {
+  background-color: #ecfa25;
+}
+@media screen and (max-width: 758px) {
+  .jogadores-container h1 {
+    display: inline-flex;
+    width: 80vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    /*text-decoration: underline solid;*/
+    font-size: 1.5rem;
+  }
+}

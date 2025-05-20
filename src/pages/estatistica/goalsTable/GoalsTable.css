@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.goals-table-container {
+  height: auto;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.GoalsTable-container h3 {
+  display: inline-flex;
+  width: 50vw;
+  background-color: silver;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 3px;
+  justify-content: center;
+  /* text-decoration: underline solid white;*/
+  font-size: 1.2rem;
+  border: 1.5px solid rgb(0, 0, 0);
+}
+
+.goals-table {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: silver;
+  box-shadow: 0 4px 8px black;
+}
+.goals-table th,
+.goals-table td {
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid grey;
+  border-bottom: 2px solid white;
+  font-size: 0.8rem;
+}
+.goals-table th {
+  background-color: rgb(255, 50, 50);
+  color: white;
+  font-weight: bold;
+  padding: 1.3rem;
+}
+.highlightBestScorer {
+  background-color: green;
+}
+.goals-table tr:hover {
+  background-color: #ecfa25;
+}
+@media screen and (max-width: 758px) {
+  .GoalsTable-container h3 {
+    display: inline-flex;
+    width: 60vw;
+    background-color: silver;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 3px;
+    justify-content: center;
+    /*text-decoration: underline solid white;*/
+    font-size: 1rem;
+  }
+  .goals-table th,
+  .goals-table td {
+    padding: 0.2rem;
+    text-align: center;
+    border: 1px solid grey;
+    border-bottom: 2px solid white;
+    font-size: 0.8rem;
+  }
+  .goals-table th {
+    background-color: rgb(255, 50, 50);
+    color: white;
+    font-weight: bold;
+    padding: 0.3rem;
+  }
+}

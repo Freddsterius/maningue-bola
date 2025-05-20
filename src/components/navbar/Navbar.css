@@ -1,0 +1,148 @@
+/******************************************************************/
+/* Reset default margin and padding for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures consistent sizing for all elements */
+}
+body {
+  padding-top: 150px;
+  text-align: center;
+}
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  font-weight: bold;
+  background-color: rgb(253, 253, 253); /* Sets a red background */
+  position: fixed; /* Fix navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hide/show effect */
+  border-bottom: 1px solid black;
+}
+
+/* Hide navbar on scroll down */
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+/* Show navbar when scrolling up */
+.navbar.show {
+  transform: translateY(0);
+}
+
+/* Logo section */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.logo img {
+  width: 100px;
+}
+.logo h1 {
+  color: rgb(255, 0, 0);
+  font-size: 0.8rem;
+}
+
+/* Main navigation menu (default: horizontal on large screens) */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+}
+
+.menu li {
+  padding: 3px;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px 8px;
+  transition: background-color 0.3s ease-in-out;
+  border: 1.5px solid rgb(255, 0, 0);
+  border-radius: 5px;
+  /*background-color: grey;*/
+}
+
+.menu a:hover {
+  background-color: blue;
+}
+
+/* Hamburger menu styles (hidden on larger screens) */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 1001;
+}
+
+/* Hamburger bar styles */
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: rgb(255, 0, 0);
+  margin-right: 10px;
+}
+
+/* Close button in hamburger */
+.hamburger .close {
+  font-size: 30px;
+  color: rgb(255, 0, 0); /* Red color for the "X" */
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+}
+
+/* Mobile responsiveness: Styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none; /* Hide menu on small screens */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px; /* Position below navbar */
+    left: 0;
+    right: 0;
+    background-color: #ffffff; /* Dark background */
+    padding: 20px;
+    z-index: 999;
+    font-weight: bold;
+  }
+
+  .menu.open {
+    display: flex; /* Show menu when open */
+  }
+
+  /* Show the hamburger menu icon on small screens */
+  .hamburger {
+    display: flex;
+  }
+  .logo img {
+    width: 50px;
+  }
+}
+
+.show {
+  transform: translateY(0);
+}
+
+.hide {
+  transform: translateY(-100%);
+}

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tabela-container {
+  height: auto;
+  margin-bottom: 50px;
+}
+.tabela-container h1 {
+  display: inline-flex;
+  width: 90vw;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  /*text-decoration: underline solid;*/
+  font-size: 2rem;
+  border: 1.5px solid red;
+}
+.tabela-table-container {
+  height: auto;
+  margin-bottom: 50px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: auto;
+}
+
+.tabela-table {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px black;
+  white-space: wrap; /**/
+}
+.tabela-table th,
+.tabela-table td {
+  padding: 0.2rem;
+  text-align: center;
+  border: 1px solid grey;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  font-size: 0.8rem;
+}
+.tabela-table th {
+  background-color: rgb(255, 47, 47);
+  color: white;
+  font-weight: bold;
+}
+
+.highlightTop4 {
+  border-left: 5px solid green;
+  background-color: #8af08a;
+}
+.maintenence {
+  border-left: 5px solid rgb(0, 132, 255);
+  background-color: rgb(70, 206, 247);
+}
+.tabela-table tr:hover {
+  background-color: #ecfa25;
+}
+@media screen and (max-width: 758px) {
+  .tabela-container h1 {
+    display: inline-flex;
+    width: 80vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    /*text-decoration: underline solid;*/
+    font-size: 1.3rem;
+  }
+}
+
+/*
+
+@media screen and (max-width: 768px) {
+  .tabela-table th,
+  .tabela-table td {
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 3px solid rgb(255, 0, 0);
+  }
+  .tabela-table th:nth-child(n + 5),
+  .tabela-table td:nth-child(n + 5) {
+    display: none;
+  }
+  .tabela-table th:nth-child(1),
+  .tabela-table th:nth-child(2),
+  .tabela-table th:nth-child(3),
+  .tabela-table th:nth-child(4) {
+    text-align: center;
+  }
+  .tabela-table td:nth-child(1),
+  .tabela-table td:nth-child(2),
+  .tabela-table td:nth-child(3),
+  .tabela-table td:nth-child(4) {
+    text-align: center;
+    color: red;
+  }
+}
+*/

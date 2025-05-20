@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sobre {
+  height: auto;
+}
+.sobre h1 {
+  display: inline-flex;
+  width: 85vw;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  /*text-decoration: underline solid;*/
+  font-size: 2.5rem;
+  border: 1.5px solid red;
+}
+@media screen and (max-width: 758px) {
+  .sobre h1 {
+    display: inline-flex;
+    width: 85vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    /* text-decoration: underline solid;*/
+    font-size: 1.3rem;
+  }
+}

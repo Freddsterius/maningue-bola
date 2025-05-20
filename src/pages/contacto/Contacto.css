@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.contact-form h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  /*text-decoration: underline solid 2px;*/
+  border: 1.5px solid red;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.3rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0056b3; /* Changes the border color when the input field is focused */
+  outline: none; /* Removes the default focus outline for better styling */
+}
+.contact-form button {
+  padding: 0.8rem; /* Adds padding inside the button */
+  font-size: 1rem; /* Sets the font size for the button text */
+  color: #fff; /* Sets the text color inside the button to white */
+  background-color: #0056b3; /* Sets the background color of the button to blue */
+  border: none; /* Removes the default border of the button */
+  border-radius: 4px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  transition: background-color 0.3s; /* Adds a smooth transition effect for the background color on hover */
+}
+
+.contact-form button:hover {
+  background-color: #004085; /* Changes the button background to a darker blue on hover */
+}
+.contact-form .success-message {
+  text-align: center; /* Centers the success message */
+  font-size: 1rem; /* Sets the font size for the success message */
+  color: #28a745; /* Sets the text color to green for success */
+}
+
+.contact-form .error-message {
+  text-align: center; /* Centers the error message */
+  font-size: 1rem; /* Sets the font size for the error message */
+  color: #dc3545; /* Sets the text color to red for errors */
+}

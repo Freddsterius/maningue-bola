@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ncard {
+  display: flex;
+  border: 3px solid rgb(55, 0, 255);
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: stretch; /**/
+  width: 90vw;
+  height: 15vh;
+  background-color: rgb(28, 154, 238);
+  /*overflow: ;*/
+  text-align: left;
+  transition: transform 0.5s ease;
+  box-shadow: 0 4px 6px black;
+  margin-left: 5px;
+}
+.ncard img {
+  width: 50%; /* Image takes the full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd;
+}
+
+.ncard h3 {
+  padding: 10px;
+  font-size: 0.8rem;
+  text-decoration: underline solid rgb(255, 255, 255) 1px;
+}
+/*
+.ncard:hover {
+  transform: scale(1.1);
+  border: 3px solid green;
+}
+  */
+.ncard p {
+  padding: 5px;
+  font-size: 1rem;
+  margin: 3px;
+}
+
+/*************************************************************/
+.news-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: background 0.3s;
+
+  margin-left: auto;
+  margin-right: auto;
+  /*
+  display: flex;
+  border: 3px solid rgb(55, 0, 255);
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: stretch; 
+  width: 90vw;
+  height: 15vh;
+  background-color: rgb(28, 154, 238);
+  overflow: none;
+  text-align: left;
+  transition: transform 0.5s ease;
+  box-shadow: 0 4px 6px black;
+  margin-left: 5px;
+  */
+}
+
+.news-card:hover {
+  background: #e0e0e0;
+}
+
+.news-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.news-text {
+  margin-top: 5px;
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .news-card {
+    display: flex;
+    align-items: center;
+    /*gap: 5px;*/
+    /*padding: 10px;*/
+    /*margin: 10px;*/
+    width: 80vw;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f9f9f9;
+    transition: background 0.3s;
+
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: auto; /**/
+  }
+
+  .news-card:hover {
+    background: #e0e0e0;
+  }
+
+  .news-image {
+    width: 30%;
+    height: 30%;
+    border-right: 2px solid red;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .news-content {
+    flex: 1;
+  }
+
+  .news-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .news-text {
+    margin-top: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inicio {
+  height: auto;
+  /*background-color: rgb(253, 120, 120);*/
+  /* background-color: url("../../assets/images/golden-ball.png");*/
+  background-image: url("../../assets/images/pexels-suzy-hazelwood-1629236.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.inicio h1 {
+  display: inline-flex;
+  width: 90vw;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1.5px solid red;
+  justify-content: center;
+  /*text-decoration: underline solid;*/
+  font-size: 2.5rem;
+}
+.inicio-txt {
+  color: white;
+  font-size: 2rem;
+}
+.website-logo {
+  display: flex;
+  border-radius: 10px;
+  border: 5px solid red;
+  width: 80vw;
+  height: 60vh;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: aqua;*/
+}
+.website-logo img {
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 758px) {
+  .inicio h1 {
+    display: inline-flex;
+    width: 80vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    /*text-decoration: underline solid;*/
+    font-size: 1.3rem;
+  }
+  .inicio-txt {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .website-logo {
+    display: flex;
+    border-radius: 10px;
+    border: 4px solid red;
+    width: 90vw;
+    height: 25vh;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aqua;*/
+  }
+}
+.maning-bola {
+  color: red;
+  font-size: 1.5rem;
+}
+
+/****************************************************/
+/***********************************************************/
+
+/*cards*/
+/*
+.card {
+  width: 380px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+}
+
+.card-1 {
+  background-image: url("../../assets/images/golden-ball.png");
+}
+.card-2 {
+  background-image: url("../../assets/images/golden-ball.png");
+}
+.card-3 {
+  background-image: url("../../assets/images/golden-ball.png");
+}
+*/
