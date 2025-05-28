@@ -19,46 +19,52 @@ const Contacto = () => {
     }
   };
   return (
-    <div className="contact-form">
-      <h1>Contacte o Criador deste Website</h1>
-      {success ? (
-        <p style={{ color: "green" }}>Obrigado pela sua mensagem!</p>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Nome:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Escreva o seu nome aquí..."
-            required
-          />
-          <br />
+    <>
+      <h1 className="contact-form-heading">Contacto</h1>
+      <p>
+        * Preencha o formulário baixo para contactar o desenvolvedor deste
+        website.
+      </p>
+      <div className="contact-form">
+        {success ? (
+          <p style={{ color: "green" }}>Obrigado pela sua mensagem!</p>
+        ) : (
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Escreva o seu nome aquí..."
+              required
+            />
+            <br />
 
-          <label htmlFor="email">E-mail:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Insira o seu e-mail aquí..."
-            required
-          />
-          <br />
+            <label htmlFor="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Insira o seu e-mail aquí..."
+              required
+            />
+            <br />
 
-          <label htmlFor="message">Mensagem:</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            placeholder="Escreva a sua mensagem aquí..."
-            required
-          ></textarea>
-          <br />
+            <label htmlFor="message">Mensagem:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Escreva a sua mensagem aquí..."
+              required
+            ></textarea>
+            <br />
 
-          <button type="submit">Enviar</button>
-        </form>
-      )}
-    </div>
+            <button type="submit">Enviar</button>
+          </form>
+        )}
+      </div>
+    </>
   );
 };
 

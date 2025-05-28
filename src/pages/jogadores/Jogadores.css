@@ -47,6 +47,11 @@
   color: white;
   font-weight: bold;
 }
+tr img {
+  width: 2rem;
+  border-radius: 50px;
+}
+
 .jogadores-table tr:hover {
   background-color: #ecfa25;
 }

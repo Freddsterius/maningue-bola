@@ -1,5 +1,6 @@
 import React from "react";
 import "./Jogadores.css";
+import playerImg from "../../assets/images/mozambique-flag.jpg";
 
 const players = [
   { id: 1, name: "Steven Strange", position: "Atacante", team: "Dreams FC" },
@@ -49,6 +50,7 @@ const Jogadores = () => {
         <table className="jogadores-table">
           <thead>
             <tr>
+              <th>Foto</th>
               <th>Jogador</th>
               <th>Posição</th>
               <th>Equipa</th>
@@ -57,6 +59,9 @@ const Jogadores = () => {
           <tbody>
             {sortedPlayers.map((player) => (
               <tr key={player.id}>
+                <td>
+                  <img src={playerImg} alt="corresponding player" />
+                </td>
                 <td>
                   <b>{player.name}</b>
                 </td>
