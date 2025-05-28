@@ -16,14 +16,14 @@ body {
   align-items: center;
   padding: 15px;
   font-weight: bold;
-  background-color: rgb(253, 253, 253); /* Sets a red background */
+  background-color: rgb(255, 255, 255); /* Sets a red background */
   position: fixed; /* Fix navbar at the top */
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   transition: transform 0.3s ease-in-out; /* Smooth transition for hide/show effect */
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid rgb(85, 48, 48);
 }
 
 /* Hide navbar on scroll down */
@@ -49,7 +49,7 @@ body {
 }
 .logo h1 {
   color: rgb(255, 0, 0);
-  font-size: 0.8rem;
+  font-size: 0.5rem;
 }
 
 /* Main navigation menu (default: horizontal on large screens) */
@@ -135,7 +135,12 @@ body {
     display: flex;
   }
   .logo img {
-    width: 50px;
+    width: 4rem;
+    padding-left: 18px;
+  }
+  .logo h1 {
+    color: rgb(0, 0, 0);
+    font-size: 0.5rem;
   }
 }
 

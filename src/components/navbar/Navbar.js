@@ -28,10 +28,10 @@ const Navbar = () => {
       <div className="logo">
         <img
           src={require("../../assets/images/golden-ball.png")}
-          alt="logotipo de boleiro"
+          alt="logotipo de maninguebola"
           width={100}
         />
-        <h1>ManingueBola.com</h1>
+        <h1>maninguebola.vercel.app</h1>
       </div>
 
       {/* Hamburger toggle button */}

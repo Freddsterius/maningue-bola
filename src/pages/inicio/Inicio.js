@@ -1,15 +1,13 @@
 import React from "react";
 import "./Inicio.css";
+import websiteLogo from "../../assets/images/golden-ball.png";
 
 const Inicio = () => {
   return (
     <div className="inicio">
       <h1>Início</h1>
       <div className="website-logo">
-        <img
-          src={require("../../assets/images/golden-ball.png")}
-          alt="logo de maningnue bola"
-        />
+        <img src={websiteLogo} alt="logo de maningnue bola" />
       </div>
       <div className="inicio-txt">
         <p>
