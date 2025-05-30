@@ -6,9 +6,9 @@
 
 .inicio {
   height: auto;
-  /*background-color: rgb(253, 120, 120);*/
-  /* background-color: url("../../assets/images/golden-ball.png");*/
-  background-image: url("../../assets/images/stary-background.jpg");
+  /*background-color: rgb(253; 120; 120);*/
+  /* background-color: url(../../assets/images/golden-ball.png);*/
+  background-image: url(../../assets/images/stary-background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -44,6 +44,23 @@
   width: auto;
   height: auto;
 }
+fieldset {
+  border-radius: 5px;
+  border: 2px solid rgb(251, 255, 0);
+}
+button {
+  color: white;
+  text-wrap: nowrap;
+  text-overflow: hide;
+  font-size: 0.7rem;
+  font-weight: 900;
+  background-color: rgb(179, 66, 66);
+  padding: 5px;
+  width: 20vw;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
 @media screen and (max-width: 758px) {
   .inicio h1 {
     display: inline-flex;
@@ -93,20 +110,20 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0; 0; 0; 0.1);
   overflow: hidden;
   display: flex;
   align-items: flex-end;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease; box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateX(10px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(0; 0; 0; 0.2);
 }
 
 .card-content {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0; 0; 0; 0.5);
   color: #fff;
   padding: 16px;
   width: 100%;
@@ -119,12 +136,12 @@
 }
 
 .card-1 {
-  background-image: url("../../assets/images/golden-ball.png");
+  background-image: url(../../assets/images/golden-ball.png);
 }
 .card-2 {
-  background-image: url("../../assets/images/golden-ball.png");
+  background-image: url(../../assets/images/golden-ball.png);
 }
 .card-3 {
-  background-image: url("../../assets/images/golden-ball.png");
+  background-image: url(../../assets/images/golden-ball.png);
 }
 */

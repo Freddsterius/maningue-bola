@@ -15,16 +15,16 @@ const Contacto = () => {
       setSuccess(true);
       event.target.reset();
     } else {
-      alert("Something went wrong. Please try again.");
+      alert("Algo deu erardo. Tente de novo.");
     }
   };
   return (
     <>
       <h1 className="contact-form-heading">Contacto</h1>
-      <p>
+      <h5 className="contact-instructin-message">
         * Preencha o formulário baixo para contactar o desenvolvedor deste
         website.
-      </p>
+      </h5>
       <div className="contact-form">
         {success ? (
           <p style={{ color: "green" }}>Obrigado pela sua mensagem!</p>

@@ -19,6 +19,7 @@
   font-size: 2.5rem;
   border: 1.5px solid red;
 }
+
 @media screen and (max-width: 758px) {
   .sobre h1 {
     display: inline-flex;

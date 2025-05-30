@@ -16,8 +16,9 @@ const Footer = () => {
           <br />
           Todos os direitos reservados.
           <br />
-          Desenvolvido por{" "}
-          <span className="creator-name">FAUSTINO RAIMUNDO</span>
+          Desenvolvido por <span className="creator-name">RAIMUNDO.</span>
+          <br />
+          Morrumnene, Inhambane, Moçambique, 2025.
         </p>
       </div>
     </div>
