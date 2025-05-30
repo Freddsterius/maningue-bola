@@ -39,7 +39,7 @@ const Inicio = () => {
       <div>
         <fieldset
           style={{
-            color: "rgb(17, 216, 43)",
+            color: "aqua",
             marginBlock: "20px",
             marginLeft: "auto",
             marginRight: "auto",
@@ -58,7 +58,7 @@ const Inicio = () => {
       <div>
         <fieldset
           style={{
-            color: "rgb(17, 216, 43)",
+            color: "aqua",
             marginBlock: "20px",
             marginLeft: "auto",
             marginRight: "auto",
@@ -77,7 +77,7 @@ const Inicio = () => {
       <div>
         <fieldset
           style={{
-            color: "rgb(17, 216, 43)",
+            color: "aqua",
             marginBlock: "20px",
             marginLeft: "auto",
             marginRight: "auto",
@@ -96,7 +96,7 @@ const Inicio = () => {
       <div>
         <fieldset
           style={{
-            color: "rgb(17, 216, 43)",
+            color: "aqua",
             marginBlock: "20px",
             marginLeft: "auto",
             marginRight: "auto",
@@ -115,7 +115,7 @@ const Inicio = () => {
       <div>
         <fieldset
           style={{
-            color: "rgb(17, 216, 43)",
+            color: "aqua",
             marginTop: "20px",
             marginLeft: "auto",
             marginRight: "auto",
