@@ -31,7 +31,7 @@ const Navbar = () => {
           alt="logotipo de maninguebola"
           width={100}
         />
-        <h1>maninguebola.vercel.app</h1>
+        <h5>maninguebola.vercel.app</h5>
       </div>
 
       {/* Hamburger toggle button */}
