@@ -55,6 +55,7 @@
   outline: none; /* Removes the default focus outline for better styling */
 }
 .contact-form button {
+  margin: 0 auto;
   padding: 0.8rem; /* Adds padding inside the button */
   font-size: 1rem; /* Sets the font size for the button text */
   color: #fff; /* Sets the text color inside the button to white */
