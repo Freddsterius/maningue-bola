@@ -29,6 +29,7 @@
   margin-bottom: 50px;
   overflow-x: auto;
   -webkit-overflow-scrolling: auto;
+  margin: 0.3rem;
 }
 
 .tabela-table {
@@ -83,6 +84,9 @@
     /*text-decoration: underline solid;*/
     font-size: 1.3rem;
   }
+  /* .tabela-table-container {
+    margin: 0.3rem;
+  }*/
 }
 
 /*

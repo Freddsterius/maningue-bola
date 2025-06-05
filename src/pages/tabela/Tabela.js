@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Tabela.css";
-const participatingTeams = [
+//import data from "../../data/tabelaData";
+/*const goalsdata = [
   {
     id: "afc",
     name: "Angels FC",
@@ -146,7 +147,9 @@ const participatingTeams = [
     points: 0,
   },
 ];
+*/
 
+/*
 const sortTeams = (teams) => {
   return teams.sort((a, b) => {
     if (b.points !== a.points) {
@@ -158,10 +161,23 @@ const sortTeams = (teams) => {
     return b.goalsScored - a.goalsScored;
   });
 };
+*/
+const Tabela = ({ data = [] }) => {
+  //const [teams, setTeams] = useState(goalsdata);
 
-const Tabela = () => {
-  const [teams, setTeams] = useState(participatingTeams);
-  const sortedTeams = sortTeams([...teams]);
+  const sortTeams = (data) => {
+    return data.sort((a, b) => {
+      if (b.points !== a.points) {
+        return b.points - a.points;
+      }
+      if (b.goalDifference !== a.goalDifference) {
+        return b.goalDifference - a.goalDifference;
+      }
+      return b.goalsScored - a.goalsScored;
+    });
+  };
+
+  const sortedTeams = sortTeams([...data]);
 
   return (
     <div className="tabela-container">

@@ -8,6 +8,7 @@
   margin-bottom: 20px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  margin: 0.3rem;
 }
 .GoalsTable-container h3 {
   display: inline-flex;

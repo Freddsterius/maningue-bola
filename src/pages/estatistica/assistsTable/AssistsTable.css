@@ -8,6 +8,7 @@
   margin-bottom: 50px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  margin: 0.3rem;
 }
 .AssistsTable-container h3 {
   display: inline-flex;

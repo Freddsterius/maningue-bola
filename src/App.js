@@ -105,13 +105,16 @@ import Navbar from "./components/navbar/Navbar"; // Import Navbar
 import Inicio from "./pages/inicio/Inicio";
 import Noticias from "./pages/noticias/Noticias";
 import Jogos from "./pages/jogos/Jogos";
-import Tabela from "./pages/tabela/Tabela";
+import TabelaFull from "./pages/tabelaFull/TabelaFull";
 import Estatistica from "./pages/estatistica/Estatistica";
 import Jogadores from "./pages/jogadores/Jogadores";
 import Equipas from "./pages/equipas/Equipas";
 import Contacto from "./pages/contacto/Contacto";
 import Sobre from "./pages/sobre/Sobre";
 import Footer from "./components/footer/Footer";
+
+import GoalsTable from "./pages/estatistica/goalsTable/GoalsTable";
+import AssistsTable from "./pages/estatistica/assistsTable/AssistsTable";
 
 function App() {
   return (
@@ -121,12 +124,15 @@ function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/noticias" element={<Noticias />} />
         <Route path="/jogos" element={<Jogos />} />
-        <Route path="/tabela" element={<Tabela />} />
+        <Route path="/tabela" element={<TabelaFull />} />
         <Route path="/estatistica" element={<Estatistica />} />
         <Route path="/jogadores" element={<Jogadores />} />
         <Route path="/equipas" element={<Equipas />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/sobre" element={<Sobre />} />
+
+        <Route path="/tabela-golos" element={<GoalsTable />} />
+        <Route path="/tabela-assistencias" element={<AssistsTable />} />
       </Routes>
 
       <Footer />

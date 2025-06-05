@@ -1,8 +1,21 @@
 import React from "react";
 import "./Inicio.css";
 import websiteLogo from "../../assets/images/golden-ball.png";
+import { useNavigate } from "react-router-dom";
+import Tabela from "../tabela/Tabela";
+import AssistsTable from "../estatistica/assistsTable/AssistsTable";
+import GoalsTable from "../estatistica/goalsTable/GoalsTable";
+
+import standings from "../../data/tabelaData";
+import goalsData from "../../data/goalsData";
+import assistsData from "../../data/assistsData";
 
 const Inicio = () => {
+  const navigate = useNavigate();
+  const topFive = standings.slice(0, 5);
+  const topThreeGoals = goalsData.slice(0, 3);
+  const topThreeAssists = assistsData.slice(0, 3);
+
   return (
     <div className="inicio">
       <h1>Início</h1>
@@ -74,62 +87,24 @@ const Inicio = () => {
           <button>Mais⏩</button>
         </fieldset>
       </div>
-      <div>
-        <fieldset
-          style={{
-            color: "aqua",
-            marginBlock: "20px",
-            marginLeft: "auto",
-            marginRight: "auto",
-            padding: "20px",
-            width: "80vw",
-          }}
-        >
-          <ol>
-            <li>Tabela Classificativa</li>
-            <li>Tabela Classificativa</li>
-            <li>Tabela Classificativa</li>
-          </ol>
-          <button>Mais⏩</button>
-        </fieldset>
+
+      <div className=".tabela-table-container-partial">
+        <Tabela data={topFive} />
+        <button onClick={() => navigate("/tabela")}>Ver Toda Tabela⏩</button>
       </div>
-      <div>
-        <fieldset
-          style={{
-            color: "aqua",
-            marginBlock: "20px",
-            marginLeft: "auto",
-            marginRight: "auto",
-            padding: "20px",
-            width: "80vw",
-          }}
-        >
-          <ol>
-            <li>Melhores Assistentes</li>
-            <li>Melhores Marcadores</li>
-            <li>Melhores Marcadores</li>
-          </ol>
-          <button>Mais⏩</button>
-        </fieldset>
+
+      <div className=".tabela-table-container-partial">
+        <GoalsTable topScorers={topThreeGoals} />
+        <button onClick={() => navigate("/estatistica#scrollToGoalsTable")}>
+          Mais Marcadores⏩
+        </button>
       </div>
-      <div>
-        <fieldset
-          style={{
-            color: "aqua",
-            marginTop: "20px",
-            marginLeft: "auto",
-            marginRight: "auto",
-            padding: "20px",
-            width: "80vw",
-          }}
-        >
-          <ol>
-            <li>Melhores Marcadores</li>
-            <li>Melhores Marcadores</li>
-            <li>Melhores Marcadores</li>
-          </ol>
-          <button>Mais⏩</button>
-        </fieldset>
+
+      <div className=".assists-table-container-partial">
+        <AssistsTable topAssisters={topThreeAssists} />
+        <button onClick={() => navigate("/estatistica#scrollToAssistsTable")}>
+          Mais Assistentes⏩
+        </button>
       </div>
     </div>
   );

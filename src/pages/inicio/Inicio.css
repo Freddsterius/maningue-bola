@@ -44,9 +44,33 @@
   width: auto;
   height: auto;
 }
+/*************/
+.tabela-table-container-partial {
+  height: auto;
+  margin-bottom: 50px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: auto;
+}
+
+.goals-table-container-partial {
+  height: auto;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.3rem;
+}
+
+.assists-table-container-partial {
+  height: auto;
+  margin-bottom: 50px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.3rem;
+}
+
 fieldset {
   border-radius: 5px;
-  border: 2px solid rgb(251, 255, 0);
+  border: 2px solid rgb(255, 255, 255);
 }
 button {
   color: white;
@@ -60,7 +84,7 @@ button {
   border-radius: 5px;
   border: 1px solid white;
 }
-
+/*******************/
 @media screen and (max-width: 758px) {
   .inicio h1 {
     display: inline-flex;
