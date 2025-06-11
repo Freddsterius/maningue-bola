@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -50,49 +50,111 @@ const Navbar = () => {
       {/* Navigation menu */}
       <ul className={`menu ${isMenuOpen ? "open" : ""}`}>
         <li>
-          <Link to="/" onClick={toggleMenu}>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Inicio
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/noticias" onClick={toggleMenu}>
+          <NavLink
+            to="/noticias"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Noticias
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/jogos" onClick={toggleMenu}>
+          <NavLink
+            to="/jogos"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Jogos
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/tabela" onClick={toggleMenu}>
+          <NavLink
+            to="/tabela"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Tabela
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/estatistica" onClick={toggleMenu}>
+          <NavLink
+            to="/estatistica"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Estatistica
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/jogadores" onClick={toggleMenu}>
+          <NavLink
+            to="/jogadores"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Jogadores
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/equipas" onClick={toggleMenu}>
+          <NavLink
+            to="/equipas"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Equipas
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/contacto" onClick={toggleMenu}>
+          <NavLink
+            to="/contacto"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Contacto
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/sobre" onClick={toggleMenu}>
+          <NavLink
+            to="/sobre"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+            onClick={toggleMenu}
+          >
             Sobre
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

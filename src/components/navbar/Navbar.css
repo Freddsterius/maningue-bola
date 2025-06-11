@@ -69,13 +69,19 @@ body {
   text-decoration: none;
   padding: 5px 8px;
   transition: background-color 0.3s ease-in-out;
-  border: 1.5px solid rgb(255, 0, 0);
+  border: 1.5px solid rgb(17, 0, 255);
   border-radius: 5px;
   /*background-color: grey;*/
 }
-
+/*
 .menu a:hover {
   background-color: blue;
+}
+*/
+.menu .nav-link.active {
+  font-weight: bolder;
+  color: orangered;
+  text-decoration: underline solid 4px yellow;
 }
 
 /* Hamburger menu styles (hidden on larger screens) */
