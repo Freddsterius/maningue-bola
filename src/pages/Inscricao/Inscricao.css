@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.contact-form-heading {
+.inscricao-form-heading {
   display: inline-flex;
   width: 85vw;
   color: white;
@@ -18,11 +18,11 @@
   margin-left: auto;
   margin-right: auto;
 }
-.contact-instructin-message {
+.inscricao-instructin-message {
   font-weight: 500;
 }
 
-.contact-form {
+.inscricao-form {
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
@@ -30,18 +30,18 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-.contact-form form {
+.inscricao-form form {
   display: flex;
   flex-direction: column;
 }
-.contact-form label {
+.inscricao-form label {
   margin-bottom: 8px;
   font-size: 1rem;
   color: #333;
   text-align: left;
 }
-.contact-form input,
-.contact-form textarea {
+.inscricao-form input,
+.inscricao-form textarea {
   padding: 0.3rem;
   margin-bottom: 1.2rem;
   border: 1px solid #ccc;
@@ -49,12 +49,12 @@
   font-size: 1rem;
   width: 100%;
 }
-.contact-form input:focus,
-.contact-form textarea:focus {
+.inscricao-form input:focus,
+.inscricao-form textarea:focus {
   border-color: #0056b3; /* Changes the border color when the input field is focused */
   outline: none; /* Removes the default focus outline for better styling */
 }
-.contact-form button {
+.inscricao-form button {
   margin: 0 auto;
   padding: 0.8rem; /* Adds padding inside the button */
   font-size: 1rem; /* Sets the font size for the button text */
@@ -66,21 +66,21 @@
   transition: background-color 0.3s; /* Adds a smooth transition effect for the background color on hover */
 }
 
-.contact-form button:hover {
+.inscricao-form button:hover {
   background-color: #004085; /* Changes the button background to a darker blue on hover */
 }
-.contact-form .success-message {
+.inscricao-form .success-message {
   text-align: center; /* Centers the success message */
   font-size: 1rem; /* Sets the font size for the success message */
   color: #28a745; /* Sets the text color to green for success */
 }
 
-.contact-form .error-message {
+.inscricao-form .error-message {
   text-align: center; /* Centers the error message */
   font-size: 1rem; /* Sets the font size for the error message */
   color: #dc3545; /* Sets the text color to red for errors */
 }
-.contact-form ::placeholder {
+.inscricao-form ::placeholder {
   font-size: 0.8rem;
   color: grey;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;

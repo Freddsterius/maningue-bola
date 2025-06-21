@@ -135,13 +135,13 @@ const Navbar = () => {
 
         <li>
           <NavLink
-            to="/contacto"
+            to="/inscricao"
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
             }
             onClick={toggleMenu}
           >
-            Contacto
+            Inscricao
           </NavLink>
         </li>
 

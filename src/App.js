@@ -12,7 +12,7 @@ import Tabela from "./pages/tabela/Tabela";
 import Estatistica from "./pages/estatistica/Estatistica";
 import Jogadores from "./pages/jogadores/Jogadores";
 import Equipas from "./pages/equipas/Equipas";
-import Contacto from "./pages/contacto/Contacto";
+import Inscricao from "./pages/Inscricao/Inscricao";
 import Sobre from "./pages/sobre/Sobre";
 import Footer from "./components/footer/Footer";
 
@@ -28,7 +28,7 @@ function App() {
         <Route path="/estatistica" element={<Estatistica />} />
         <Route path="/jogadores" element={<Jogadores />} />
         <Route path="/equipas" element={<Equipas />} />
-        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/Inscricao" element={<Inscricao />} />
         <Route path="/sobre" element={<Sobre />} />
       </Routes>
       <Footer />
@@ -54,7 +54,7 @@ import Tabela from "./pages/tabela/Tabela";
 import Estatistica from "./pages/estatistica/Estatistica";
 import Jogadores from "./pages/jogadores/Jogadores";
 import Equipas from "./pages/equipas/Equipas";
-import Contacto from "./pages/contacto/Contacto";
+import Inscricao from "./pages/Inscricao/Inscricao";
 import Sobre from "./pages/sobre/Sobre";
 import Footer from "./components/footer/Footer";
 
@@ -86,7 +86,7 @@ function App() {
           <Route path="/estatistica" element={<Estatistica />} />
           <Route path="/jogadores" element={<Jogadores />} />
           <Route path="/equipas" element={<Equipas />} />
-          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/Inscricao" element={<Inscricao />} />
           <Route path="/sobre" element={<Sobre />} />
         </Routes>
         <Footer />
@@ -109,7 +109,7 @@ import TabelaFull from "./pages/tabelaFull/TabelaFull";
 import Estatistica from "./pages/estatistica/Estatistica";
 import Jogadores from "./pages/jogadores/Jogadores";
 import Equipas from "./pages/equipas/Equipas";
-import Contacto from "./pages/contacto/Contacto";
+import Inscricao from "./pages/Inscricao/Inscricao";
 import Sobre from "./pages/sobre/Sobre";
 import Footer from "./components/footer/Footer";
 
@@ -128,7 +128,7 @@ function App() {
         <Route path="/estatistica" element={<Estatistica />} />
         <Route path="/jogadores" element={<Jogadores />} />
         <Route path="/equipas" element={<Equipas />} />
-        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/inscricao" element={<Inscricao />} />
         <Route path="/sobre" element={<Sobre />} />
 
         <Route path="/tabela-golos" element={<GoalsTable />} />

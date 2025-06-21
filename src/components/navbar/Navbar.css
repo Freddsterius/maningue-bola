@@ -66,6 +66,7 @@ body {
 
 .menu a {
   color: rgb(0, 0, 0);
+  background-color: rgb(145, 186, 189);
   text-decoration: none;
   padding: 5px 8px;
   transition: background-color 0.3s ease-in-out;
@@ -73,15 +74,15 @@ body {
   border-radius: 5px;
   /*background-color: grey;*/
 }
-/*
+
 .menu a:hover {
-  background-color: blue;
+  background-color: rgb(66, 66, 121);
 }
-*/
+
 .menu .nav-link.active {
   font-weight: bolder;
-  color: orangered;
-  text-decoration: underline solid 4px yellow;
+  color: rgb(255, 0, 0);
+  text-decoration: underline solid 3px yellow;
 }
 
 /* Hamburger menu styles (hidden on larger screens) */

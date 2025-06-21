@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./Contacto.css";
+import "./Inscricao.css";
 
-const Contacto = () => {
+const Inscricao = () => {
   const [success, setSuccess] = useState(false);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -18,35 +19,47 @@ const Contacto = () => {
       alert("Algo deu erardo. Tente de novo.");
     }
   };
+
   return (
     <>
-      <h1 className="contact-form-heading">Contacto</h1>
-      <h5 className="contact-instructin-message">
-        * Preencha o formulário baixo para contactar o desenvolvedor deste
-        website.
+      <h1 className="inscricao-form-heading">Inscrição</h1>
+
+      <h5 className="inscricao-instructin-message">
+        Preencha o formulário baixo para inscrever a sua equipa no canmpeonato
+        MANINGUE BOLA.
       </h5>
-      <div className="contact-form">
+      <h5>Os campos com o asterístico (*) são obrigatórios de preencher.</h5>
+
+      <div className="inscricao-form">
         {success ? (
           <p style={{ color: "green" }}>Obrigado pela sua mensagem!</p>
         ) : (
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Nome:</label>
+            <label htmlFor="name">*Nome da Equipa:</label>
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Escreva o seu nome aquí..."
+              placeholder="Escreva o nome aquí..."
               required
             />
             <br />
 
-            <label htmlFor="email">E-mail:</label>
+            <label htmlFor="email">*E-mail da Equipa:</label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="Insira o seu e-mail aquí..."
+              placeholder="Insira o e-mail aquí..."
               required
+            />
+            <br />
+            <label htmlFor="phone-number">Número de telefone:</label>
+            <input
+              type="text"
+              id="phone-number"
+              name="phone-number"
+              placeholder="Insira o número de telefone da equipa aquí..."
             />
             <br />
 
@@ -55,10 +68,8 @@ const Contacto = () => {
               id="message"
               name="message"
               rows="4"
-              placeholder="Escreva a sua mensagem aquí..."
-              required
+              placeholder="Caso tenha alguma sugestão ou reclamação escreva-a aquí..."
             ></textarea>
-            <br />
 
             <button type="submit">Enviar</button>
           </form>
@@ -68,4 +79,4 @@ const Contacto = () => {
   );
 };
 
-export default Contacto;
+export default Inscricao;
