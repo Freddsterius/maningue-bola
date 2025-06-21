@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -25,14 +25,16 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolling ? "hide" : "show"}`}>
-      <div className="logo">
-        <img
-          src={require("../../assets/images/golden-ball.png")}
-          alt="logotipo de maninguebola"
-          width={100}
-        />
-        <h5>maninguebola.vercel.app</h5>
-      </div>
+      <Link to="/">
+        <div className="logo">
+          <img
+            src={require("../../assets/images/golden-ball.png")}
+            alt="logotipo de maninguebola"
+            width={100}
+          />
+          <h5>maninguebola.vercel.app</h5>
+        </div>
+      </Link>
 
       {/* Hamburger toggle button */}
       <div className="hamburger" onClick={toggleMenu}>
