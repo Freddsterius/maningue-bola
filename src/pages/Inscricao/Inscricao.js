@@ -35,20 +35,20 @@ const Inscricao = () => {
           <p style={{ color: "green" }}>Obrigado pela sua mensagem!</p>
         ) : (
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">*Nome da Equipa:</label>
+            <label htmlFor="team-name">*Nome da Equipa:</label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="team-name"
+              name="team-name"
               placeholder="Escreva o nome da equipa aquí..."
               required
             />
             <br />
-            <label htmlFor="name">*Nome do Trainador:</label>
+            <label htmlFor="coach-name">*Nome do Trainador:</label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="coach-name"
+              name="coach-name"
               placeholder="Escreva o nome do trainador aquí..."
               required
             />
@@ -60,24 +60,28 @@ const Inscricao = () => {
               id="email"
               name="email"
               placeholder="Escreva o e-mail da equipa aquí..."
-              required
             />
             <br />
             <label htmlFor="phone-number">*Número de telefone da equipa:</label>
             <input
-              type="text"
+              type="tel"
               id="phone-number"
               name="phone-number"
-              placeholder="Escreva o número de telefone da equipa aquí..."
+              /*pattern=""*/
+              inputMode="numeric"
+              placeholder="+258 80 12 34 567"
+              /* placeholder="Escreva o número de telefone da equipa aquí..."*/
+              required
             />
             <br />
 
-            <label htmlFor="phone-number">*Localização da equipa:</label>
+            <label htmlFor="team-location">*Localização da equipa:</label>
             <input
               type="text"
-              id="phone-number"
-              name="phone-number"
+              id="team-location"
+              name="team-location"
               placeholder="Escreva a localização  da equipa aquí..."
+              required
             />
 
             <button type="submit">Enviar</button>
