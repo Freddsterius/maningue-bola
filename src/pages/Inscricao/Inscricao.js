@@ -25,8 +25,8 @@ const Inscricao = () => {
       <h1 className="inscricao-form-heading">Inscrição</h1>
 
       <h5 className="inscricao-instructin-message">
-        Preencha o formulário baixo para inscrever a sua equipa no canmpeonato
-        MANINGUE BOLA.
+        Preencha o formulário baixo para inscrever a sua equipa no campeonato de
+        futebol <span style={{ color: "red" }}>MANINGUE BOLA</span>.
       </h5>
       <h5>Os campos com o asterístico (*) são obrigatórios de preencher.</h5>
 
@@ -40,36 +40,45 @@ const Inscricao = () => {
               type="text"
               id="name"
               name="name"
-              placeholder="Escreva o nome aquí..."
+              placeholder="Escreva o nome da equipa aquí..."
+              required
+            />
+            <br />
+            <label htmlFor="name">*Nome do Trainador:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Escreva o nome do trainador aquí..."
               required
             />
             <br />
 
-            <label htmlFor="email">*E-mail da Equipa:</label>
+            <label htmlFor="email">E-mail da Equipa:</label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="Insira o e-mail aquí..."
+              placeholder="Escreva o e-mail da equipa aquí..."
               required
             />
             <br />
-            <label htmlFor="phone-number">Número de telefone:</label>
+            <label htmlFor="phone-number">*Número de telefone da equipa:</label>
             <input
               type="text"
               id="phone-number"
               name="phone-number"
-              placeholder="Insira o número de telefone da equipa aquí..."
+              placeholder="Escreva o número de telefone da equipa aquí..."
             />
             <br />
 
-            <label htmlFor="message">Mensagem:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Caso tenha alguma sugestão ou reclamação escreva-a aquí..."
-            ></textarea>
+            <label htmlFor="phone-number">*Localização da equipa:</label>
+            <input
+              type="text"
+              id="phone-number"
+              name="phone-number"
+              placeholder="Escreva a localização  da equipa aquí..."
+            />
 
             <button type="submit">Enviar</button>
           </form>

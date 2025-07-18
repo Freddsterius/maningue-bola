@@ -143,7 +143,7 @@ const Navbar = () => {
             }
             onClick={toggleMenu}
           >
-            Inscricao
+            Inscricão
           </NavLink>
         </li>
 
