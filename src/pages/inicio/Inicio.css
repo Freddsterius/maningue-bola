@@ -6,11 +6,11 @@
 
 .inicio {
   height: auto;
-  /*background-color: rgb(253; 120; 120);*/
+  background-color: aliceblue;
   /* background-color: url(../../assets/images/golden-ball.png);*/
-  background-image: url(../../assets/images/stadium-4760441_1920.jpg);
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
+ */
 }
 .inicio h1 {
   display: inline-flex;
@@ -22,11 +22,10 @@
   border-radius: 10px;
   border: 1.5px solid red;
   justify-content: center;
-  /*text-decoration: underline solid;*/
   font-size: 2.5rem;
 }
 .inicio-txt {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 2rem;
 }
 .website-logo {
@@ -38,7 +37,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: aqua;*/
+  background-image: url(../../assets/images/stadium-4760441_1920.jpg);
 }
 .website-logo img {
   width: auto;
