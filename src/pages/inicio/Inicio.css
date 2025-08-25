@@ -77,11 +77,11 @@ button {
   color: white;
   text-wrap: nowrap;
   text-overflow: hide;
-  font-size: 0.7rem;
-  font-weight: 900;
+  font-size: 0.6rem;
+  font-weight: 800;
   background-color: rgb(179, 66, 66);
   padding: 5px;
-  width: 20vw;
+  width: auto;
   border-radius: 5px;
   border: 1px solid white;
 }
