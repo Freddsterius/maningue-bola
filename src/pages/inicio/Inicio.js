@@ -68,6 +68,7 @@ const Inicio = () => {
           <button>Mais⏩</button>
         </fieldset>
       </div>
+
       <div>
         <fieldset
           style={{
@@ -88,19 +89,19 @@ const Inicio = () => {
         </fieldset>
       </div>
 
-      <div className=".tabela-table-container-partial">
+      <div className="tabela-table-container-partial">
         <Tabela data={topFive} />
         <button onClick={() => navigate("/tabela")}>Ver Toda Tabela⏩</button>
       </div>
 
-      <div className=".tabela-table-container-partial">
+      <div className="tabela-table-container-partial">
         <GoalsTable topScorers={topThreeGoals} />
         <button onClick={() => navigate("/estatistica#scrollToGoalsTable")}>
           Mais Marcadores⏩
         </button>
       </div>
 
-      <div className=".assists-table-container-partial">
+      <div className="assists-table-container-partial">
         <AssistsTable topAssisters={topThreeAssists} />
         <button onClick={() => navigate("/estatistica#scrollToAssistsTable")}>
           Mais Assistentes⏩
