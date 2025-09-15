@@ -53,7 +53,6 @@ const Inscricao = () => {
               required
             />
             <br />
-
             <label htmlFor="email">E-mail da Equipa:</label>
             <input
               type="email"
@@ -73,8 +72,7 @@ const Inscricao = () => {
               /* placeholder="Escreva o número de telefone da equipa aquí..."*/
               required
             />
-            <br />
-
+            <br />u
             <label htmlFor="team-location">*Localização da equipa:</label>
             <input
               type="text"
@@ -83,7 +81,6 @@ const Inscricao = () => {
               placeholder="Escreva a localização  da equipa aquí..."
               required
             />
-
             <button type="submit">Enviar</button>
           </form>
         )}
