@@ -1,6 +1,6 @@
 import React from "react";
 import "./Inicio.css";
-import websiteLogo from "../../assets/images/golden-ball.png";
+import websiteLogo from "../../assets/images/hero/golden-ball.png";
 import { useNavigate } from "react-router-dom";
 import Tabela from "../tabela/Tabela";
 import AssistsTable from "../estatistica/assistsTable/AssistsTable";

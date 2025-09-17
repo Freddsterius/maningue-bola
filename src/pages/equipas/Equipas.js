@@ -1,55 +1,56 @@
 import React from "react";
-import EqCard from "./eqCard/EqCard";
+import EqCard from "../../components/cards/eqCard/EqCard";
 import "./Equipas.css";
+import teamImg from "../../assets/images/teams/bruschetta-50.webp";
 
 const teams = [
   {
     name: "Angels FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Dreams FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Progress FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Success FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Freedom FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Happiness FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Life FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Wellness FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Genius FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Kindness FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Love and Fun FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
   {
     name: "Enterteinment FC",
-    getImageSrc: () => require("../../assets/images/golden-ball.png"),
+    image: teamImg,
   },
 ];
 const orderedTeams = [...teams].sort((a, b) => a.name.localeCompare(b.name));
@@ -61,11 +62,7 @@ const Equipas = () => {
       </div>
       <div className="teams-container">
         {orderedTeams.map((team) => (
-          <EqCard
-            key={team.name}
-            name={team.name}
-            imageSrc={team.getImageSrc()}
-          />
+          <EqCard key={team.name} name={team.name} image={team.image} />
         ))}
       </div>
     </div>

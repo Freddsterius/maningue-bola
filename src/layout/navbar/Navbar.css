@@ -1,15 +1,3 @@
-/******************************************************************/
-/* Reset default margin and padding for all elements */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; /* Ensures consistent sizing for all elements */
-}
-body {
-  padding-top: 150px;
-  text-align: center;
-}
-/* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-around;

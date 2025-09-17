@@ -1,5 +1,5 @@
 import React from "react";
-import JgCard from "./jgCard/JgCard";
+import JgCard from "../../components/cards/jgCard/JgCard";
 import "./Jogos.css";
 
 const games = [

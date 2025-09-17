@@ -11,9 +11,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding-top: 150px;
+  /* text-align: center; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  /*--page-min-height: 100vh;*/ /*still unused*/
+
+  /*colors*/
+  --dark: #000000;
+  --light: #ffffff;
+
+  /* border-radiuses*/
+  --h1-container-border-radius: 0.4rem;
+
+  /*
+
+
+
+  --primary-color1: #495e57;
+  --primary-color2: #f4ce14;
+
+  --secondary-color1: #ee9972;
+  --secondary-color2: #fbdabb;
+
+  --highlight-color1: #edefee;
+  --highlight-color2: #333333;
+
+  --btn-border-radius: 0.6rem;
+  --img-border-radius: 0.625rem;
+
+  --form-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+  --form-container-padding: 1.25rem 0.75rem;
+  --form-input-border-radius: 0.4rem;
+  --form-input-padding: 0.5rem;
+  --form-btn-input-border-radius: 5rem;
+  --form-btn-input-hover-color: #14daf4;
+
+  --transition-timing: 200ms;
+  */
 }

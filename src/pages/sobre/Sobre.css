@@ -1,36 +1,91 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.sobre-container {
+  min-height: 60vh;
 }
-.sobre {
-  height: auto;
-}
-.sobre h1 {
-  display: inline-flex;
-  width: 85vw;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  padding: 5px;
-  margin: 10px;
-  border-radius: 10px;
-  justify-content: center;
-  /*text-decoration: underline solid;*/
-  font-size: 2.5rem;
-  border: 1.5px solid red;
-}
+.sobre-container h1 {
+  width: 60vw;
+  color: var(--light);
+  background-color: var(--dark);
+  margin: auto; /*center*/
+  border-radius: var(--h1-container-border-radius);
+  text-decoration: underline solid;
+  border: 1px solid rgb(0, 255, 0);
+  font-size: 1.2rem;
+  padding-block: 0.2em;
 
-@media screen and (max-width: 758px) {
-  .sobre h1 {
-    display: inline-flex;
-    width: 85vw;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    /* text-decoration: underline solid;*/
+  /*small*/
+
+  /*medium*/
+  @media (min-width: 768px) {
     font-size: 1.3rem;
   }
+
+  /*large*/
+  @media (min-width: 992px) {
+    font-size: 1.4rem;
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+    font-size: 1.5rem;
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    font-size: 1.6rem;
+  }
+}
+
+.sobre-container-text {
+  margin-top: 1rem;
+  padding-inline: 1rem;
+
+  background-color: orange; /******/
+}
+
+.sobre-container-text p {
+  color: red;
+}
+.sobre-container .img-container {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.sobre-container-text img {
+  max-width: 80%;
+
+  /*small*/
+
+  /*medium*/
+
+  /*large*/
+  @media (min-width: 992px) {
+    max-width: 30%;
+  }
+
+  /*extra large*/
+
+  /*extra extra large*/
+}
+/********Breakpoint********/
+/*small*/
+@media (min-width: 576px) {
+}
+
+/*medium*/
+@media (min-width: 768px) {
+}
+
+/*large*/
+@media (min-width: 992px) {
+}
+
+/*extra large*/
+@media (min-width: 1200px) {
+}
+
+/*extra extra large*/
+@media (min-width: 1400px) {
 }

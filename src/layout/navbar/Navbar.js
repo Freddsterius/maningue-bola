@@ -28,7 +28,7 @@ const Navbar = () => {
       <Link to="/">
         <div className="logo">
           <img
-            src={require("../../assets/images/golden-ball.png")}
+            src={require("../../assets/images/hero/golden-ball.png")}
             alt="logotipo de maninguebola"
             width={100}
           />

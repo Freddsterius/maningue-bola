@@ -1,26 +1,34 @@
 import React from "react";
 import "./Sobre.css";
+import placeholderImg from "../../assets/images/hero/golden-ball.png";
 
 const Sobre = () => {
   return (
-    <div className="sobre">
+    <div className="sobre-container">
       <h1>Sobre</h1>
-      <p>
-        <span className="maning-bola">ManingueBola</span>, é um website amador
-        criado por um estudante de "Desenvolvimento de Websites".
-      </p>
-      <p>
-        O objectivo principal do website é abordar assuntos relacionados ao
-        campeonato espanhol, mais conhecido como{" "}
-        <a
-          href="https://www.laliga.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i>LaLiga</i>.
-        </a>
-      </p>
-      <div>
+
+      <div className="sobre-container-text">
+        <p>
+          <span className="maning-bola">ManingueBola</span>, é um website amador
+          criado por um estudante de "Desenvolvimento de Websites".
+        </p>
+        <p>
+          O objectivo principal do website é abordar assuntos relacionados ao
+          campeonato espanhol, mais conhecido como{" "}
+          <a
+            href="https://www.laliga.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <em>LaLiga</em>.
+          </a>
+        </p>
+        <div className="img-container">
+          <img src={placeholderImg} />
+        </div>
+      </div>
+
+      {/* <div>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo velit
         nihil, obcaecati neque adipisci voluptas mollitia, nemo facilis quo
         numquam eaque totam id vel reprehenderit molestias laboriosam pariatur
@@ -37,7 +45,7 @@ const Sobre = () => {
         dolor vitae ducimus, aliquam fugiat quos hic illum! Pariatur vel, dolore
         illo ab id modi voluptatem, dolor enim fugiat beatae similique aliquid
         ea quos eveniet aspernatur quisquam quaerat rem. Autem, eum ipsam?
-      </div>
+      </div> */}
     </div>
   );
 };
