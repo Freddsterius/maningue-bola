@@ -15,6 +15,7 @@ const GoalsTable = ({ topScorers }) => {
   return (
     <div className="GoalsTable-container" id="scrollToGoalsTable">
       <h3>Melhores Marcadores:</h3>
+
       <div className="goals-table-container">
         <table className="goals-table">
           <thead>

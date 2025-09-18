@@ -101,13 +101,13 @@ const Navbar = () => {
 
         <li>
           <NavLink
-            to="/estatistica"
+            to="/estatisticas"
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
             }
             onClick={toggleMenu}
           >
-            Estatistica
+            Estatisticas
           </NavLink>
         </li>
 

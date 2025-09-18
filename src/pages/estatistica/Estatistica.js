@@ -6,10 +6,12 @@ import AssistsTable from "./assistsTable/AssistsTable";
 import topScorers from "../../data/goalsData";
 import topAssisters from "../../data/assistsData";
 
+import PageHeading from "../../components/atoms/pageHeading/PageHeading";
+
 const estatistica = () => {
   return (
     <div className="estatistica">
-      <h1>Estatística</h1>
+      <PageHeading headingName="Estatísticas" />
 
       <GoalsTable topScorers={topScorers} />
       <AssistsTable topAssisters={topAssisters} />

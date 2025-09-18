@@ -2,10 +2,11 @@ import React from "react";
 import NCard from "./nCard/NCard";
 import "./Noticias.css";
 import goldenBallImg from "../../assets/images/hero/golden-ball.png";
+import PageHeading from "../../components/atoms/pageHeading/PageHeading";
 
 const newsArticles = [
   {
-    title: "Angels FC",
+    title: "Angels FC finishes first!",
     content:
       "📃📜📰blanjfhgdfghd fghdf hudfghd fgdfhgdfgdfgfgdg  er er ter erteryt erter eryer-  eyery ery erer7y erer7 er er",
     image: goldenBallImg,
@@ -81,7 +82,8 @@ const newsArticles = [
 const Noticias = () => {
   return (
     <div className="noticia">
-      <h1>Notícias</h1>
+      <PageHeading headingName="Notícias" />
+
       <h3>Destaques da semana:</h3>
       <div className="news-list">
         {newsArticles.map((article) => (

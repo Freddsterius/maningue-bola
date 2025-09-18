@@ -1,5 +1,6 @@
 import React from "react";
 import "./Jogadores.css";
+import PageHeading from "../../components/atoms/pageHeading/PageHeading";
 
 const players = [
   {
@@ -103,7 +104,8 @@ const sortedPlayers = [...players].sort((a, b) => a.name.localeCompare(b.name));
 const Jogadores = () => {
   return (
     <div className="jogadores-container">
-      <h1>Jogadores</h1>
+      <PageHeading headingName="Jogadores" />
+
       <div className="jogadores-table-container">
         <table className="jogadores-table">
           <thead>

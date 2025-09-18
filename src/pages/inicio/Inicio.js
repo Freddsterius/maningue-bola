@@ -10,6 +10,8 @@ import standings from "../../data/tabelaData";
 import goalsData from "../../data/goalsData";
 import assistsData from "../../data/assistsData";
 
+import PageHeading from "../../components/atoms/pageHeading/PageHeading";
+
 const Inicio = () => {
   const navigate = useNavigate();
   const topFive = standings.slice(0, 5);
@@ -18,7 +20,8 @@ const Inicio = () => {
 
   return (
     <div className="inicio">
-      <h1>Início</h1>
+      <PageHeading headingName="Início" />
+
       <div className="website-logo">
         <img src={websiteLogo} alt="logo de maningnue bola" />
       </div>

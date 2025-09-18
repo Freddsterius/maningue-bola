@@ -1,45 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .jogos {
   height: auto;
 }
-.jogos h1 {
-  display: inline-flex;
-  width: 90vw;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  padding: 5px;
-  margin-top: 30px;
-  border-radius: 10px;
-  justify-content: center;
-  /*text-decoration: underline solid;*/
-  font-size: 2.5rem;
-  border: 1.5px solid red;
-}
+
 .jornada {
   background-color: red;
   color: white;
   width: 100%;
   margin-top: 10px;
   border: 2px solid rgb(255, 255, 255);
-}
-@media screen and (max-width: 758px) {
-  .jogos h1 {
-    display: inline-flex;
-    width: 80vw;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    /*text-decoration: underline solid;*/
-    font-size: 1.3rem;
-  }
 }

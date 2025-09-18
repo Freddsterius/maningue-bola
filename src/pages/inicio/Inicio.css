@@ -1,27 +1,8 @@
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .inicio {
   min-height: 100vh;
-  background-color: rgb(53, 61, 68);
+  background-color: rgb(133, 127, 127);
 }
-.inicio h1 {
-  display: inline-flex;
-  width: 90vw;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  padding: 5px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 1.5px solid red;
-  justify-content: center;
-  font-size: 2.5rem;
-}
+
 .inicio-txt {
   color: rgb(0, 0, 0);
   font-size: 2rem;
@@ -87,21 +68,6 @@ button {
 }
 /*******************/
 @media screen and (max-width: 758px) {
-  .inicio h1 {
-    display: inline-flex;
-    width: 80vw;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    /*text-decoration: underline solid;*/
-    font-size: 1.3rem;
-  }
   .inicio-txt {
     color: white;
     font-size: 1.2rem;

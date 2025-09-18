@@ -1,87 +1,137 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.inscricao-form-heading {
-  display: inline-flex;
-  width: 85vw;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  padding: 5px;
-  margin: 10px;
-  border-radius: 10px;
-  justify-content: center;
-  /*text-decoration: underline solid;*/
-  font-size: 2.5rem;
-  border: 1.5px solid red;
-  margin-left: auto;
-  margin-right: auto;
-}
-.inscricao-instructin-message {
-  font-weight: 500;
+/********Breakpoint********/
+/*small*/
+@media (min-width: 576px) {
 }
 
-.inscricao-form {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+/*medium*/
+@media (min-width: 768px) {
 }
-.inscricao-form form {
+
+/*large*/
+@media (min-width: 992px) {
+}
+
+/*extra large*/
+@media (min-width: 1200px) {
+}
+
+/*extra extra large*/
+@media (min-width: 1400px) {
+}
+
+/**********************************************/
+/*********************************/
+.inscricao-instruction-message-container {
+  background-color: rgb(178, 180, 80);
+  padding-inline: 1rem;
+  margin-inline: 1rem;
+}
+.inscricao-instruction-message-container p {
+  color: rgb(25, 0, 255);
+}
+
+.inscricao-form .success-message {
+  text-align: center;
+  font-size: 1rem;
+  color: #28a745;
+}
+.inscricao-form .error-message {
+  text-align: center;
+  font-size: 1rem;
+  color: #dc3545;
+}
+/************************/
+.create-full-screen-container {
+  min-height: 100vh;
+  width: 100vw;
+
   display: flex;
   flex-direction: column;
-}
-.inscricao-form label {
-  margin-bottom: 8px;
-  font-size: 1rem;
-  color: #333;
-  text-align: left;
-}
-.inscricao-form input,
-.inscricao-form textarea {
-  padding: 0.3rem;
-  margin-bottom: 1.2rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  width: 100%;
-}
-.inscricao-form input:focus,
-.inscricao-form textarea:focus {
-  border-color: #0056b3; /* Changes the border color when the input field is focused */
-  outline: none; /* Removes the default focus outline for better styling */
-}
-.inscricao-form button {
-  margin: 0 auto;
-  padding: 0.8rem; /* Adds padding inside the button */
-  font-size: 1rem; /* Sets the font size for the button text */
-  color: #fff; /* Sets the text color inside the button to white */
-  background-color: #0056b3; /* Sets the background color of the button to blue */
-  border: none; /* Removes the default border of the button */
-  border-radius: 4px; /* Rounds the corners of the button */
-  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
-  transition: background-color 0.3s; /* Adds a smooth transition effect for the background color on hover */
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(57, 117, 45);
 }
 
-.inscricao-form button:hover {
-  background-color: #004085; /* Changes the button background to a darker blue on hover */
-}
-.inscricao-form .success-message {
-  text-align: center; /* Centers the success message */
-  font-size: 1rem; /* Sets the font size for the success message */
-  color: #28a745; /* Sets the text color to green for success */
+.create-container {
+  background-color: var(--highlight-color2);
+  border-radius: var(--form-input-border-radius);
+  box-shadow: var(--form-shadow);
+  padding: var(--form-container-padding);
+  width: 90vw;
+  max-width: 37.5rem;
+  margin-block: 1rem;
+
+  background-color: #f9f9f9;
 }
 
-.inscricao-form .error-message {
-  text-align: center; /* Centers the error message */
-  font-size: 1rem; /* Sets the font size for the error message */
-  color: #dc3545; /* Sets the text color to red for errors */
+.create-title {
+  margin: 0;
+  color: var(--light);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  color: red; /******/
 }
-.inscricao-form ::placeholder {
+
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.create-account-form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  background-color: rgb(85, 166, 190); /******/
+}
+.create-account-form .input-group label {
+  color: var(--light);
+  font-weight: lighter;
+
+  color: #333; /*****/
+}
+.create-account-form .input-group input {
+  font-size: 1.2rem;
+  padding: var(--form-input-padding);
+  border: none;
+  outline: none;
+  border-radius: var(--form-input-border-radius);
+  background-color: var(--highlight-color1);
+  color: var(--dark);
+  font-weight: lighter;
+}
+.create-account-form .input-group input::placeholder {
   font-size: 0.8rem;
-  color: grey;
+  color: var(--dark);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.create-account-form .input-group input:focus {
+  box-shadow: 0 0 0 1.5px var(--primary-color2);
+}
+
+.create-button {
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  background-color: #0056b3;
+  border: 1px solid var(--dark);
+  border-radius: var(--form-btn-input-border-radius);
+  outline: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color var(--transition-timing);
+}
+.create-button:hover {
+  background-color: var(--primary-color2);
+}
+
+.note {
+  color: var(--light);
+  font-size: 0.8rem;
 }

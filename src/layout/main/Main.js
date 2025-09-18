@@ -22,7 +22,7 @@ const Main = () => {
         <Route path="/noticias" element={<Noticias />} />
         <Route path="/jogos" element={<Jogos />} />
         <Route path="/tabela" element={<TabelaFull />} />
-        <Route path="/estatistica" element={<Estatistica />} />
+        <Route path="/estatisticas" element={<Estatistica />} />
         <Route path="/jogadores" element={<Jogadores />} />
         <Route path="/equipas" element={<Equipas />} />
         <Route path="/inscricao" element={<Inscricao />} />

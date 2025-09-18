@@ -1,26 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .jogadores-table-container {
   height: auto;
   margin-bottom: 50px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-}
-.jogadores-container h1 {
-  display: inline-flex;
-  width: 80vw;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  padding: 5px;
-  margin: 10px;
-  border-radius: 10px;
-  justify-content: center;
-  /* text-decoration: underline solid;*/
-  font-size: 2.5rem;
-  border: 1.5px solid red;
 }
 
 .jogadores-table {
@@ -54,18 +36,4 @@ tr img {
 
 .jogadores-table tr:hover {
   background-color: #ecfa25;
-}
-@media screen and (max-width: 758px) {
-  .jogadores-container h1 {
-    display: inline-flex;
-    width: 80vw;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    /*text-decoration: underline solid;*/
-    font-size: 1.5rem;
-  }
 }

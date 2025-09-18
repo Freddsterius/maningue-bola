@@ -1,11 +1,12 @@
 import React from "react";
 import "./Sobre.css";
 import placeholderImg from "../../assets/images/hero/golden-ball.png";
+import PageHeading from "../../components/atoms/pageHeading/PageHeading";
 
 const Sobre = () => {
   return (
     <div className="sobre-container">
-      <h1>Sobre</h1>
+      <PageHeading headingName="Sobre" />
 
       <div className="sobre-container-text">
         <p>

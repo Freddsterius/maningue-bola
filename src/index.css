@@ -12,8 +12,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding-top: 150px;
+  padding-top: 100px;
   /* text-align: center; */
+
+  /*from medium and beyond*/
+  @media (min-width: 768px) {
+    padding-top: 150px;
+  }
 }
 
 code {
@@ -27,32 +32,40 @@ code {
   /*colors*/
   --dark: #000000;
   --light: #ffffff;
+  --primary-color2: #f4ce14;
+  --highlight-color1: #edefee;
 
   /* border-radiuses*/
   --h1-container-border-radius: 0.4rem;
+
+  /* form related*/
+  --form-input-padding: 0.5rem;
+  --form-input-border-radius: 0.3rem;
+  --form-container-padding: 1.25rem 0.75rem;
 
   /*
 
 
 
   --primary-color1: #495e57;
-  --primary-color2: #f4ce14;
+
 
   --secondary-color1: #ee9972;
   --secondary-color2: #fbdabb;
 
-  --highlight-color1: #edefee;
+
   --highlight-color2: #333333;
 
   --btn-border-radius: 0.6rem;
   --img-border-radius: 0.625rem;
 
   --form-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
-  --form-container-padding: 1.25rem 0.75rem;
-  --form-input-border-radius: 0.4rem;
-  --form-input-padding: 0.5rem;
+
+
+
   --form-btn-input-border-radius: 5rem;
   --form-btn-input-hover-color: #14daf4;
+
 
   --transition-timing: 200ms;
   */

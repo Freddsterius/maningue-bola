@@ -1,39 +1,6 @@
 .sobre-container {
   min-height: 70vh;
 }
-.sobre-container h1 {
-  width: 60vw;
-  color: var(--light);
-  background-color: var(--dark);
-  margin: auto; /*center*/
-  border-radius: var(--h1-container-border-radius);
-  text-decoration: underline solid;
-  border: 1px solid rgb(0, 255, 0);
-  font-size: 1.2rem;
-  padding-block: 0.2em;
-
-  /*small*/
-
-  /*medium*/
-  @media (min-width: 768px) {
-    font-size: 1.3rem;
-  }
-
-  /*large*/
-  @media (min-width: 992px) {
-    font-size: 1.4rem;
-  }
-
-  /*extra large*/
-  @media (min-width: 1200px) {
-    font-size: 1.5rem;
-  }
-
-  /*extra extra large*/
-  @media (min-width: 1400px) {
-    font-size: 1.6rem;
-  }
-}
 
 .sobre-container-text {
   margin-top: 1rem;
@@ -68,24 +35,4 @@
   /*extra large*/
 
   /*extra extra large*/
-}
-/********Breakpoint********/
-/*small*/
-@media (min-width: 576px) {
-}
-
-/*medium*/
-@media (min-width: 768px) {
-}
-
-/*large*/
-@media (min-width: 992px) {
-}
-
-/*extra large*/
-@media (min-width: 1200px) {
-}
-
-/*extra extra large*/
-@media (min-width: 1400px) {
 }

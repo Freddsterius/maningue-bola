@@ -1,6 +1,7 @@
 import React from "react";
 import JgCard from "../../components/cards/jgCard/JgCard";
 import "./Jogos.css";
+import PageHeading from "../../components/atoms/pageHeading/PageHeading";
 
 const games = [
   {
@@ -101,7 +102,8 @@ const games3 = [
 const Jogos = () => {
   return (
     <div className="jogos">
-      <h1>Jogos</h1>
+      <PageHeading headingName="Jogos" />
+
       <h3 className="jornada">Jornada 1</h3>
       {games.map((game) => (
         <JgCard

@@ -2,6 +2,7 @@ import React from "react";
 import EqCard from "../../components/cards/eqCard/EqCard";
 import "./Equipas.css";
 import teamImg from "../../assets/images/teams/bruschetta-50.webp";
+import PageHeading from "../../components/atoms/pageHeading/PageHeading";
 
 const teams = [
   {
@@ -57,9 +58,8 @@ const orderedTeams = [...teams].sort((a, b) => a.name.localeCompare(b.name));
 const Equipas = () => {
   return (
     <div className="equipas-container">
-      <div className="equipas-title-container">
-        <h1>Equipas Participantes:</h1>
-      </div>
+      <PageHeading headingName="Equipas" />
+
       <div className="teams-container">
         {orderedTeams.map((team) => (
           <EqCard key={team.name} name={team.name} image={team.image} />

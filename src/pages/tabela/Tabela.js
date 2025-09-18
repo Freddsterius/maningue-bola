@@ -1,5 +1,7 @@
 import React from "react";
 import "./Tabela.css";
+import PageHeading from "../../components/atoms/pageHeading/PageHeading";
+
 //import data from "../../data/tabelaData";
 /*const goalsdata = [
   {
@@ -181,7 +183,7 @@ const Tabela = ({ data = [] }) => {
 
   return (
     <div className="tabela-container">
-      <h1>Tabela Classificativa</h1>
+      <PageHeading headingName="Tabela" />
 
       <div className="tabela-table-container">
         <table className="tabela-table">
