@@ -42,7 +42,7 @@
 }
 /************************/
 .create-full-screen-container {
-  min-height: 100vh;
+  min-height: var(--page-min-height);
   width: 100vw;
 
   display: flex;

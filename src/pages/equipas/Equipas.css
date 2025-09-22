@@ -1,5 +1,5 @@
 .equipas-container {
-  height: auto;
+  min-height: var(--page-min-height);
   margin-bottom: 50px;
 }
 

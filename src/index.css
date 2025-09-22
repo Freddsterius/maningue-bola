@@ -27,7 +27,7 @@ code {
 }
 
 :root {
-  /*--page-min-height: 100vh;*/ /*still unused*/
+  --page-min-height: 100vh;
 
   /*colors*/
   --dark: #000000;
