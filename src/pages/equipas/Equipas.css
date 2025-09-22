@@ -4,12 +4,17 @@
 }
 
 .teams-container {
-  display: flex;
+  /* display: flex;
   height: auto;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px;
-  padding: 20px;
+
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.2rem;
+  grid-auto-rows: minmax(75px, auto);
 }
