@@ -86,7 +86,7 @@
   flex-direction: column;
   gap: 7px;
 
-  background-color: rgb(216, 85, 172); /******/
+  background-color: rgb(53, 47, 51); /******/
 }
 .create-account-form .input-group label {
   color: var(--light);
