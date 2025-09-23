@@ -1,6 +1,9 @@
 .equipas-container {
   min-height: var(--page-min-height);
   margin-bottom: 50px;
+  padding-inline: 1rem;
+
+  background-color: red; /********/
 }
 
 .teams-container {
@@ -14,7 +17,8 @@
   margin-right: auto; */
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.2rem;
   grid-auto-rows: minmax(75px, auto);
+  justify-content: center;
 }

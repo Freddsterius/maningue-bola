@@ -1,11 +1,10 @@
-
 .eqcard {
   display: flex;
   border: 2px solid rgb(217, 255, 0);
   border-radius: 8px;
   flex-direction: column;
   justify-content: center; /**/
-  width: 250px;
+  /* width: 250px; */
   background-color: rgb(150, 153, 150);
   overflow: hidden;
   text-align: center;
