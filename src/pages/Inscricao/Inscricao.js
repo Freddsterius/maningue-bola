@@ -21,7 +21,6 @@ const Inscricao = () => {
     }
   };
 
-  /*************************** */
   const [formData, setFormData] = useState({
     teamName: "",
     coachName: "",
@@ -34,29 +33,29 @@ const Inscricao = () => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  /******************************* */
-
   return (
-    <div className="create-full-screen-container">
-      <PageHeading headingName="Incrição" />
+    <div className="inscricao-full-screen-container">
+      <PageHeading headingName="Inscrição" />
 
       <div className="inscricao-instruction-message-container">
         <p>
-          Preencha o formulário baixo para inscrever a sua equipa no campeonato
+          Preencha o formulário abaixo para inscrever a sua equipa no campeonato
           de futebol <span style={{ color: "red" }}>MANINGUE BOLA</span>.
         </p>
 
-        <p>Os campos com o asterístico (*) são obrigatórios de preencher.</p>
+        <p>
+          Nota: Os campos com o asterístico (*) são obrigatórios de preencher.
+        </p>
       </div>
 
-      <div className="create-container">
+      <div className="inscricao-form-container">
         {success ? (
           <p style={{ color: "green" }}>Obrigado pela sua incrição!</p>
         ) : (
           <>
-            <h1 className="create-title">Inscreva a sua equipa</h1>
+            <h1 className="inscricao-title">Inscreva a sua equipa</h1>
 
-            <form className="create-account-form" onSubmit={handleSubmit}>
+            <form className="inscricao-form" onSubmit={handleSubmit}>
               <div className="input-group">
                 <label htmlFor="team-name">*Nome da Equipa:</label>
                 <input
@@ -146,14 +145,9 @@ const Inscricao = () => {
                 )}
               </div>
 
-              <button type="submit" className="create-button">
+              <button type="submit" className="submit-button">
                 Submeter
               </button>
-
-              <p className="note">
-                Nota: Os campos com o asterístico (*) são obrigatórios de
-                preencher.
-              </p>
             </form>
           </>
         )}

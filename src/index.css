@@ -41,7 +41,16 @@ code {
   /* form related*/
   --form-input-padding: 0.5rem;
   --form-input-border-radius: 0.3rem;
-  --form-container-padding: 1.25rem 0.75rem;
+  --form-container-border-radius: 0.8rem;
+  --form-container-padding: 1.25rem 0.8rem;
+  --form-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+
+  /* form submit button related*/
+  --form-btn-input-border-radius: 5rem;
+  --form-btn-input-bg-color: #0056b3;
+
+  /* animation related*/
+  --transition-timing: 300ms;
 
   /*
 
@@ -56,17 +65,21 @@ code {
 
   --highlight-color2: #333333;
 
+
+  /* general butttons related
   --btn-border-radius: 0.6rem;
+
+  /* general images related
   --img-border-radius: 0.625rem;
 
-  --form-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
 
 
 
-  --form-btn-input-border-radius: 5rem;
-  --form-btn-input-hover-color: #14daf4;
 
 
-  --transition-timing: 200ms;
+
+
+
+
   */
 }

@@ -21,14 +21,6 @@
 
 /**********************************************/
 /*********************************/
-.inscricao-instruction-message-container {
-  background-color: rgb(178, 180, 80);
-  padding-inline: 1rem;
-  margin-inline: 1rem;
-}
-.inscricao-instruction-message-container p {
-  color: rgb(25, 0, 255);
-}
 
 .inscricao-form .success-message {
   text-align: center;
@@ -40,8 +32,10 @@
   font-size: 1rem;
   color: #dc3545;
 }
-/************************/
-.create-full-screen-container {
+/********************************/
+/**********************************************/
+
+.inscricao-full-screen-container {
   min-height: var(--page-min-height);
   width: 100vw;
 
@@ -50,12 +44,25 @@
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(99, 199, 199);
+  background-color: rgb(117, 92, 77); /**********/
 }
 
-.create-container {
+.inscricao-instruction-message-container {
+  background-color: rgb(231, 235, 31); /******/
+  padding: 0.4rem 1rem;
+  margin-inline: 1rem;
+  width: 90vw;
+  max-width: 37.5rem;
+
+  border-radius: 3px; /*************/
+}
+.inscricao-instruction-message-container p {
+  color: rgb(25, 0, 255);
+}
+
+.inscricao-form-container {
   background-color: var(--highlight-color2);
-  border-radius: var(--form-input-border-radius);
+  border-radius: var(--form-container-border-radius);
   box-shadow: var(--form-shadow);
   padding: var(--form-container-padding);
   width: 90vw;
@@ -65,36 +72,36 @@
   background-color: #f9f9f9; /*******/
 }
 
-.create-title {
+.inscricao-title {
   margin: 0;
   color: var(--light);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
 
-  color: red; /******/
+  color: rgb(12, 31, 1); /******/
 }
 
-.create-account-form {
+.inscricao-form {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
   margin-top: 1.25rem;
 }
-.create-account-form .input-group {
+.inscricao-form .input-group {
   display: flex;
   flex-direction: column;
   gap: 7px;
 
-  background-color: rgb(53, 47, 51); /******/
+  background-color: rgb(144, 212, 144); /******/
 }
-.create-account-form .input-group label {
+.inscricao-form .input-group label {
   color: var(--light);
   font-weight: lighter;
 
   color: #333; /*****/
 }
-.create-account-form .input-group input {
+.inscricao-form .input-group input {
   font-size: 1.2rem;
   padding: var(--form-input-padding);
   border: none;
@@ -104,34 +111,29 @@
   color: var(--dark);
   font-weight: lighter;
 }
-.create-account-form .input-group input::placeholder {
+.inscricao-form .input-group input::placeholder {
   font-size: 0.8rem;
   color: var(--dark);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
 }
 
-.create-account-form .input-group input:focus {
+.inscricao-form .input-group input:focus {
   box-shadow: 0 0 0 1.5px var(--primary-color2);
 }
 
-.create-button {
+.submit-button {
   color: var(--light);
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  font-weight: lighter;
-  background-color: #0056b3;
+  font-weight: 600;
+  background-color: var(--form-btn-input-bg-color);
   border: 1px solid var(--dark);
   border-radius: var(--form-btn-input-border-radius);
   outline: none;
-  outline: none;
   cursor: pointer;
-  transition: background-color var(--transition-timing);
+  transition: background-color, border-radius var(--transition-timing);
 }
-.create-button:hover {
+.submit-button:hover {
   background-color: var(--primary-color2);
-}
-
-.note {
-  color: var(--light);
-  font-size: 0.8rem;
+  border-radius: 1px;
 }
