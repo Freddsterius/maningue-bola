@@ -68,7 +68,7 @@ const Inscricao = () => {
                   required
                 />
                 <p>You typed: {formData.teamName}</p>
-                {formData.teamName == "" && (
+                {formData.teamName === "" && (
                   <p style={{ color: "red" }}>⚠️ First Name is required!</p>
                 )}
               </div>
@@ -85,7 +85,7 @@ const Inscricao = () => {
                   required
                 />
                 <p>You typed: {formData.coachName}</p>
-                {formData.coachName == "" && (
+                {formData.coachName === "" && (
                   <p style={{ color: "red" }}>⚠️ First Name is required!</p>
                 )}
               </div>
@@ -102,7 +102,7 @@ const Inscricao = () => {
                   required
                 />
                 <p>You typed: {formData.teamEmail}</p>
-                {formData.teamEmail == "" && (
+                {formData.teamEmail === "" && (
                   <p style={{ color: "red" }}>⚠️ First Name is required!</p>
                 )}
               </div>
@@ -123,7 +123,7 @@ const Inscricao = () => {
                   required
                 />
                 <p>You typed: {formData.teamPhoneNumber}</p>
-                {formData.teamPhoneNumber == "" && (
+                {formData.teamPhoneNumber === "" && (
                   <p style={{ color: "red" }}>⚠️ First Name is required!</p>
                 )}
               </div>
@@ -140,7 +140,7 @@ const Inscricao = () => {
                   required
                 />
                 <p>You typed: {formData.teamLocation}</p>
-                {formData.teamLocation == "" && (
+                {formData.teamLocation === "" && (
                   <p style={{ color: "red" }}>⚠️ First Name is required!</p>
                 )}
               </div>
