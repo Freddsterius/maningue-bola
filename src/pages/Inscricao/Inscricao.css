@@ -44,11 +44,11 @@
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(194, 90, 26); /**********/
+  background-color: rgb(192, 191, 191); /**********/
 }
 
 .inscricao-instruction-message-container {
-  background-color: rgb(231, 235, 31); /******/
+  background-color: rgb(248, 228, 228); /******/
   padding: 0.4rem 1rem;
   margin-inline: 1rem;
   width: 90vw;
@@ -57,7 +57,7 @@
   border-radius: 3px; /*************/
 }
 .inscricao-instruction-message-container p {
-  color: rgb(25, 0, 255);
+  color: var(--dark); /*****/
 }
 
 .inscricao-form-container {
@@ -69,7 +69,7 @@
   max-width: 37.5rem;
   margin-block: 1rem;
 
-  background-color: #f9f9f9; /*******/
+  background-color: grey; /*******/
 }
 
 .inscricao-title {
@@ -79,7 +79,7 @@
   font-size: 1.7rem;
   font-weight: 400;
 
-  color: rgb(12, 31, 1); /******/
+  color: rgb(14, 36, 1); /******/
 }
 
 .inscricao-form {
@@ -92,8 +92,6 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
-
-  background-color: rgb(144, 212, 144); /******/
 }
 .inscricao-form .input-group label {
   color: var(--light);
@@ -118,8 +116,20 @@
 }
 
 .inscricao-form .input-group input:focus {
-  box-shadow: 0 0 0 1.5px var(--primary-color2);
+  box-shadow: 0 0 0 1.5px var(--form-btn-input-bg-color);
 }
+
+/*****************/
+.inscricao-form .input-group input:not(:placeholder-shown):valid {
+  box-shadow: 0 0 0 1.5px green;
+}
+.inscricao-form .input-group input:not(:placeholder-shown):invalid {
+  box-shadow: 0 0 0 1.5px red;
+}
+.inscricao-form .input-group input:focus:invalid {
+  box-shadow: 0 0 0 1.5px blue;
+}
+/*****************/
 
 .submit-button {
   color: var(--light);
@@ -131,9 +141,8 @@
   border-radius: var(--form-btn-input-border-radius);
   outline: none;
   cursor: pointer;
-  transition: background-color, border-radius var(--transition-timing);
+  transition: background-color var(--transition-timing);
 }
 .submit-button:hover {
   background-color: var(--primary-color2);
-  border-radius: 1px;
 }
