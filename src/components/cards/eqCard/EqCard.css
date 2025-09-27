@@ -1,29 +1,61 @@
 .eqcard {
-  display: flex;
-  border: 2px solid rgb(217, 255, 0);
-  border-radius: 8px;
-  flex-direction: column;
-  justify-content: center; /**/
-  /* width: 250px; */
-  background-color: rgb(224, 236, 48);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 200ms ease;
+  background-color: lavender; /*undecided*/
+  border: 2px solid #4070f4;
   box-shadow: 0 2px 2px black;
-}
-.eqcard img {
-  width: 100%; /* Image takes the full width of the card */
-  height: auto; /* Maintain aspect ratio */
-  border-bottom: 1px solid #ddd;
-}
-
-.eqcard h3 {
-  padding: 10px;
-  font-size: 18px;
-  text-decoration: underline solid rgb(255, 255, 255) 1px;
+  border-radius: 12px;
+  transition: all var(--transition-timing);
 }
 .eqcard:hover {
   transform: scale(1.1);
   border: 2px solid green;
   box-shadow: 0 4px 6px black;
+}
+
+.card-image-container {
+  width: 100%;
+  height: auto;
+}
+.card-img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  text-align: center;
+}
+.team-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  padding-bottom: 0.1rem;
+}
+.team-description {
+  font-size: 1rem;
+  color: #2c2c2c;
+  overflow: hidden;
+}
+
+.visit-button {
+  font-weight: 550;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.4rem 2rem;
+  background-color: #4070f4;
+  border-radius: 4px;
+  margin-block: 0.5rem;
+  transition: background-color var(--transition-timing);
+  width: 60%;
+}
+.visit-button:hover {
+  background-color: #0e4bf5;
+  cursor: pointer;
 }

@@ -1,12 +1,12 @@
 .sobre-container {
   min-height: 70vh;
+  padding-inline: var(--page-padding-inline);
 }
 
 .sobre-container-text {
   margin-top: 1rem;
-  padding-inline: 1rem;
 
-  background-color: orange; /******/
+  background-color: orange; /*unnecessary*/
 }
 
 .sobre-container-text p {

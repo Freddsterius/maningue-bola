@@ -37,3 +37,24 @@ tr img {
 .jogadores-table tr:hover {
   background-color: #ecfa25;
 }
+
+/********Breakpoint********/
+/*small*/
+@media (min-width: 576px) {
+}
+
+/*medium*/
+@media (min-width: 768px) {
+}
+
+/*large*/
+@media (min-width: 992px) {
+}
+
+/*extra large*/
+@media (min-width: 1200px) {
+}
+
+/*extra extra large*/
+@media (min-width: 1400px) {
+}

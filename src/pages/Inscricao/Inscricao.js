@@ -157,21 +157,3 @@ const Inscricao = () => {
 };
 
 export default Inscricao;
-
-/*
-  import React, { useState } from "react";
-import "./newAccount.css";
-
-const NewAccount = () => {
-
-  return (
-
-
-
-
-  );
-};
-
-export default NewAccount;
-
-  */

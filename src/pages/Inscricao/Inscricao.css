@@ -1,26 +1,6 @@
-/********Breakpoint********/
-/*small*/
-@media (min-width: 576px) {
-}
-
-/*medium*/
-@media (min-width: 768px) {
-}
-
-/*large*/
-@media (min-width: 992px) {
-}
-
-/*extra large*/
-@media (min-width: 1200px) {
-}
-
-/*extra extra large*/
-@media (min-width: 1400px) {
-}
-
 /**********************************************/
 /*********************************/
+/* currently unused styles
 
 .inscricao-form .success-message {
   text-align: center;
@@ -32,11 +12,13 @@
   font-size: 1rem;
   color: #dc3545;
 }
+  */
 /********************************/
 /**********************************************/
 
 .inscricao-full-screen-container {
   min-height: var(--page-min-height);
+  padding-inline: var(--page-padding-inline);
   width: 100vw;
 
   display: flex;
@@ -44,20 +26,20 @@
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(192, 191, 191); /**********/
+  background-color: rgb(192, 191, 191); /*undecided*/
 }
 
 .inscricao-instruction-message-container {
-  background-color: rgb(248, 228, 228); /******/
+  background-color: rgb(248, 228, 228); /*undecided*/
   padding: 0.4rem 1rem;
   margin-inline: 1rem;
   width: 90vw;
   max-width: 37.5rem;
 
-  border-radius: 3px; /*************/
+  border-radius: 3px; /*undecided*/
 }
 .inscricao-instruction-message-container p {
-  color: var(--dark); /*****/
+  color: var(--dark); /*undecided*/
 }
 
 .inscricao-form-container {
@@ -69,7 +51,7 @@
   max-width: 37.5rem;
   margin-block: 1rem;
 
-  background-color: grey; /*******/
+  background-color: rgb(125, 255, 244); /*undecided*/
 }
 
 .inscricao-title {
@@ -79,7 +61,7 @@
   font-size: 1.7rem;
   font-weight: 400;
 
-  color: rgb(14, 36, 1); /******/
+  color: purple; /*undecided*/
 }
 
 .inscricao-form {
@@ -119,7 +101,7 @@
   box-shadow: 0 0 0 1.5px var(--form-btn-input-bg-color);
 }
 
-/*****************/
+/*********This styles need some deep research tweaks********/
 .inscricao-form .input-group input:not(:placeholder-shown):valid {
   box-shadow: 0 0 0 1.5px green;
 }

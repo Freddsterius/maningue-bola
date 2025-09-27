@@ -35,8 +35,10 @@ code {
   --primary-color2: #f4ce14;
   --highlight-color1: #edefee;
 
+  /*************general*****************/
   /* border-radiuses*/
   --h1-container-border-radius: 0.4rem;
+  --page-padding-inline: 1rem;
 
   /* form related*/
   --form-input-padding: 0.5rem;

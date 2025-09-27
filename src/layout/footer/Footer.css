@@ -2,7 +2,7 @@
   background-color: rgb(46, 43, 43);
   height: auto;
   width: 100%;
-  padding: 1rem 0.2rem;
+  padding: 1rem 0.1rem;
   display: flex;
   justify-content: center;
 }
@@ -10,7 +10,7 @@
 .footer-logo-conatiner {
   flex: 1;
 
-  background-color: aqua; /*********/
+  background-color: aqua; /*unnecessary*/
 }
 .footer-logo-conatiner .footer-logo-link {
   display: flex;
@@ -33,7 +33,7 @@
   align-items: center;
   flex: 2;
 
-  background-color: rgb(120, 118, 228); /******/
+  background-color: rgb(120, 118, 228); /*unnecessary*/
 }
 
 .footer-text-container p {
