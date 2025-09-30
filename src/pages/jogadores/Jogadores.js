@@ -108,6 +108,7 @@ const Jogadores = () => {
 
       <div className="jogadores-table-container">
         <table className="jogadores-table">
+          {/* <caption>Informações dos jogadores</caption> */}
           <thead>
             <tr>
               <th>Foto</th>
@@ -116,6 +117,7 @@ const Jogadores = () => {
               <th>Equipa</th>
             </tr>
           </thead>
+
           <tbody>
             {sortedPlayers.map((player) => (
               <tr key={player.id}>
