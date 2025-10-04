@@ -29,7 +29,7 @@
 
 .jogadores-table th,
 .jogadores-table td {
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
 }
 
 .jogadores-table th {
@@ -38,17 +38,18 @@
   background-color: rgb(255, 47, 47); /*undecised*/
 }
 
-.image-container {
-  background-color: rgb(147, 161, 161); /*undecised*/
+tr .image-container {
+  background-color: rgb(115, 219, 219); /*undecised*/
   text-align: center;
 }
-.image-container img {
+
+tr .image-container img {
   width: 2rem;
-  border-radius: 50px;
+  border-radius: 50%;
 }
-.image-container:hover,
+tr .image-container:hover,
 .jogadores-table tr:hover {
-  background-color: #ecfa25;
+  background-color: #ecfa25; /*undecised*/
 }
 
 /*****************************************/
@@ -73,14 +74,6 @@
 
 /*extra extra large*/
 @media (min-width: 1400px) {
-}
-
-.sample-table-container {
-  min-height: 100vh;
-  background: url(../../assets/images/teams/bruschetta-50.webp) center / cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*
