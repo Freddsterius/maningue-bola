@@ -1,44 +1,58 @@
-.jogadores-table-container {
-  height: auto;
-  margin-bottom: 50px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.jogadores-container {
+  min-height: var(--page-min-height);
+  background-color: #ffffff; /*undecided*/
+}
 
-  background-color: red; /*for commit*/
+.jogadores-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; /*undecided*/
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /*to allow horizonatl scroll*/
 }
 
 .jogadores-table {
+  background-color: rgb(192, 192, 192);
   width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-  border: 1px solid white;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px black;
-  background-color: silver;
+  margin-bottom: 1rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+.jogadores-table,
 .jogadores-table th,
 .jogadores-table td {
-  padding: 8px;
-  text-align: center;
-  border: 1px solid grey;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  font-size: 0.8rem;
+  border-collapse: collapse;
+  border: 1px solid rgb(17, 0, 255);
+  /* border-bottom: 2px solid rgb(255, 0, 0); */
 }
+
+.jogadores-table th,
+.jogadores-table td {
+  padding: 0.6rem;
+}
+
 .jogadores-table th {
-  background-color: rgb(255, 47, 47);
-  color: white;
-  font-weight: bold;
+  color: white; /*undecised*/
+  text-align: left;
+  background-color: rgb(255, 47, 47); /*undecised*/
 }
-tr img {
+
+.image-container {
+  background-color: rgb(147, 161, 161); /*undecised*/
+  text-align: center;
+}
+.image-container img {
   width: 2rem;
   border-radius: 50px;
 }
-
+.image-container:hover,
 .jogadores-table tr:hover {
   background-color: #ecfa25;
 }
+
+/*****************************************/
+/******************************************/
 
 /********Breakpoint********/
 /*small*/
@@ -69,9 +83,11 @@ tr img {
   align-items: center;
 }
 
+/*
+
 main.table {
-  width: 82vw; /*?*/
-  height: 90vh; /*?*/
+  width: 82vw; ??
+  height: 90vh; ??
   background-color: #fff5;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
@@ -91,7 +107,7 @@ main.table {
   background-color: #fffb;
   margin: 0.8rem auto;
   border-radius: 0.6rem;
-  overflow: auto; /*scroll bar*/
+  overflow: auto; /*scroll bar
 }
 .table_body::-webkit-scrollbar {
   width: 0.5rem;
@@ -133,9 +149,9 @@ tbody tr:hover {
 td img {
   width: 36px;
   height: 36px;
-  margin-right: 0.5rem; /*??*/
+  margin-right: 0.5rem; **
   border-radius: 50%;
-  vertical-align: middle; /*?*/
+  vertical-align: middle; ***
 }
 .status {
   padding: 0.4rem 0;
@@ -154,12 +170,12 @@ td img {
 
 .status.pending {
   background-color: #ebc473;
-  /* color: #b30021; */
+  /* color: #b30021;
 }
 
 .status.shipped {
   background-color: #6fcaea;
-  /* color: #b30021; */
+  /* color: #b30021;
 }
 
 @media (max-width: 1000px) {
@@ -167,3 +183,4 @@ td img {
     min-width: 12.1rem;
   }
 }
+*/
