@@ -11,6 +11,10 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /*to allow horizonatl scroll*/
 }
+caption {
+  color: red; /*undecided*/
+  background-color: #ecfa25; /*undecided*/
+}
 
 .jogadores-table {
   background-color: rgb(192, 192, 192);
@@ -35,6 +39,7 @@
 .jogadores-table th {
   color: white; /*undecised*/
   text-align: left;
+  padding: 1.2rem 0.5rem;
   background-color: rgb(255, 47, 47); /*undecised*/
 }
 
