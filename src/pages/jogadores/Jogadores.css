@@ -13,7 +13,9 @@
 }
 caption {
   color: red; /*undecided*/
-  background-color: #ecfa25; /*undecided*/
+  background-color: #ccd18c; /*undecided*/
+  border: 1px solid rgb(17, 0, 255);
+  border-bottom: none;
 }
 
 .jogadores-table {
