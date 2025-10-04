@@ -4,9 +4,6 @@
 }
 
 .jogadores-table-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 50px; /*undecided*/
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /*to allow horizonatl scroll*/
@@ -14,18 +11,18 @@
 caption {
   color: rgb(255, 255, 255); /*undecided*/
   background-color: hsl(130, 90%, 38%); /*undecided*/
-  border: 1px solid rgb(0, 0, 0);
+
   border-bottom: none;
   padding-block: 0.3rem;
 }
 
 .jogadores-table {
-  background-color: rgb(192, 192, 192);
+  margin: 0 auto 1rem;
+  background-color: rgb(190, 186, 186);
   width: 80vw;
   margin-bottom: 1rem;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  border-radius: 0.8rem;
 }
 
 .jogadores-table,
@@ -34,18 +31,26 @@ caption {
   border-collapse: collapse;
   border: 1px solid rgb(0, 0, 0);
   /* border-bottom: 2px solid rgb(255, 0, 0); */
+  border: none; /* Remove all borders first */
 }
 
 .jogadores-table th,
 .jogadores-table td {
   padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid rgb(0, 0, 0); /* Only bottom borders */
 }
 
 .jogadores-table th {
+  /* position: sticky;
+  top: 0;
+  border-bottom: 2px solid #000000;
+  z-index: 10; */
+
   color: white; /*undecised*/
   text-align: left;
   padding: 1.2rem 0.5rem;
   background-color: rgb(47, 113, 255); /*undecised*/
+  border-bottom: 2px solid #000000; /* Thicker for header */
 }
 
 tr .image-container {
@@ -60,6 +65,9 @@ tr .image-container img {
 tr .image-container:hover,
 .jogadores-table tr:hover {
   background-color: #ecfa25; /*undecised*/
+}
+tbody tr:nth-child(even) {
+  background-color: rgb(141, 141, 141);
 }
 
 /*****************************************/
