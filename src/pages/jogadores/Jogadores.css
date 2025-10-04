@@ -16,6 +16,7 @@ caption {
   background-color: #ccd18c; /*undecided*/
   border: 1px solid rgb(17, 0, 255);
   border-bottom: none;
+  padding-block: 0.3rem;
 }
 
 .jogadores-table {
