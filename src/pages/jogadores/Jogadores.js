@@ -137,10 +137,6 @@ const Jogadores = () => {
 
       <div className="sample-table-container">
         <div class="table">
-          <section class="table_header">
-            <h1>Customer's Orders</h1>
-          </section>
-
           <section class="table_body">
             <table>
               <thead>
