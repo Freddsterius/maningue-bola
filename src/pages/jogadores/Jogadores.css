@@ -12,9 +12,9 @@
   -webkit-overflow-scrolling: touch; /*to allow horizonatl scroll*/
 }
 caption {
-  color: red; /*undecided*/
-  background-color: #ccd18c; /*undecided*/
-  border: 1px solid rgb(17, 0, 255);
+  color: rgb(255, 255, 255); /*undecided*/
+  background-color: hsl(130, 90%, 38%); /*undecided*/
+  border: 1px solid rgb(0, 0, 0);
   border-bottom: none;
   padding-block: 0.3rem;
 }
@@ -30,7 +30,7 @@ caption {
 .jogadores-table th,
 .jogadores-table td {
   border-collapse: collapse;
-  border: 1px solid rgb(17, 0, 255);
+  border: 1px solid rgb(0, 0, 0);
   /* border-bottom: 2px solid rgb(255, 0, 0); */
 }
 
