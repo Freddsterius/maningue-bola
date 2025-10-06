@@ -49,12 +49,12 @@ caption {
   color: white; /*undecised*/
   text-align: left;
   padding: 1.2rem 0.5rem;
-  background-color: rgb(47, 113, 255); /*undecised*/
-  border-bottom: 2px solid #000000; /* Thicker for header */
+  background-color: rgb(0, 0, 0); /*undecised*/
+  border-bottom: 2px solid #ffffff; /*undecised*/
 }
 
 tr .image-container {
-  background-color: rgb(115, 219, 219); /*undecised*/
+  background-color: rgb(0, 0, 0); /*decised*/
   text-align: center;
 }
 
