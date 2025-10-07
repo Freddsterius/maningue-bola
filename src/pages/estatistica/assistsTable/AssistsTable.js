@@ -25,6 +25,7 @@ const AssistsTable = ({ topAssisters = [] }) => {
               <th>Assistências Dadas</th>
             </tr>
           </thead>
+
           <tbody>
             {sortedTopAssisters.map((assister, index) => (
               <tr
