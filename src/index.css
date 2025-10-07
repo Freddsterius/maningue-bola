@@ -32,6 +32,7 @@ code {
   /*colors*/
   --dark: #000000;
   --light: #ffffff;
+  --primary-color1: #495e57;
   --primary-color2: #f4ce14;
   --highlight-color1: #edefee;
 
@@ -58,7 +59,7 @@ code {
 
 
 
-  --primary-color1: #495e57;
+
 
 
   --secondary-color1: #ee9972;

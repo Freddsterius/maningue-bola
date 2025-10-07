@@ -11,7 +11,7 @@
 }
 caption {
   color: rgb(255, 255, 255); /*undecided*/
-  background-color: hsl(0, 24%, 40%); /*undecided*/
+  background-color: var(--primary-color2); /*undecided*/
   border-bottom: none;
   padding-block: 0.5rem;
 }
@@ -21,7 +21,6 @@ caption {
   background-color: rgb(250, 250, 250);
   max-width: 90vw;
   margin-bottom: 1rem;
-  /* border-radius: 0.3rem; */
   overflow: hidden;
   font-size: 0.93rem;
 
@@ -57,7 +56,7 @@ caption {
 .jogadores-table th,
 .jogadores-table td {
   padding: 0.3rem;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid var(--highlight-color1);
   border-left: 1px solid rgb(204, 204, 204);
 }
 
@@ -70,7 +69,7 @@ caption {
   color: white; /*undecised*/
   text-align: left;
   padding: 1.2rem 0.5rem;
-  background-color: var(--dark); /*undecised*/
+  background-color: var(--primary-color1); /*undecised*/
   border-bottom: 2px solid #888888; /*undecised*/
 }
 
@@ -105,7 +104,7 @@ tr .team-container img {
 
 tr .image-container:hover,
 .jogadores-table tr:hover {
-  background-color: #ecfa25; /*undecised*/
+  background-color: #4ed470; /*undecised*/
 }
 
 tbody tr:nth-child(even) {
