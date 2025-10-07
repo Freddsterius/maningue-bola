@@ -224,7 +224,7 @@ const Jogadores = () => {
                   <b>{player.name}</b>
                 </td>
                 <td>{player.position}</td>
-                <td>
+                <td className="team-container">
                   <img src={player.playerImg} alt={player.alt} />
                   {player.team}
                 </td>
