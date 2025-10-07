@@ -10,10 +10,12 @@
   -webkit-overflow-scrolling: touch; /*to allow horizonatl scroll*/
 }
 caption {
-  color: rgb(255, 255, 255); /*undecided*/
+  color: var(--dark); /*undecided*/
   background-color: var(--primary-color2); /*undecided*/
   border-bottom: none;
   padding-block: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .jogadores-table {
