@@ -17,6 +17,7 @@ const AssistsTable = ({ topAssisters = [] }) => {
       <h3>Melhores Assistentes:</h3>
       <div className="assists-table-container">
         <table className="assists-table">
+          <caption>Tabela dos Jogadores</caption>
           <thead>
             <tr>
               <th>Posição</th>
