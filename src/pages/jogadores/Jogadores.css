@@ -1,6 +1,6 @@
 .jogadores-container {
   min-height: var(--page-min-height);
-  padding-inline: var(--page-padding-inline);
+  /* padding-inline: var(--page-padding-inline); */
   background-color: #ffffff; /*undecided*/
 }
 
