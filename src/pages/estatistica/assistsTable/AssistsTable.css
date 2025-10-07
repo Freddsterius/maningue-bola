@@ -83,11 +83,45 @@
   border-bottom: 2px solid #423e3e; /*undecised*/
 }
 
-.highlightBestAssister {
-  background-color: green;
+/* .jogadores-table th:nth-child(1) {
+  text-align: center;
+  border-left: none;
+} */
+
+/*
+tr .image-container {
+
+  text-align: center;
+  border-left: none;
 }
+
+ tr .image-container img {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+tr .team-container {
+  display: flex;
+  align-items: center;
+}
+tr .team-container span {
+  margin-left: 0.2rem;
+}
+
+tr .team-container img {
+  width: 2rem;
+  border-radius: 50%;
+} */
+
+tbody tr:nth-child(even) {
+  background-color: rgb(226, 226, 226);
+}
+
+/* .highlightBestAssister {
+  background-color: green;
+} */
 .assists-table tr:hover {
-  background-color: #ecfa25;
+  background-color: #4ed470;
 }
 /*
 @media screen and (max-width: 758px) {
