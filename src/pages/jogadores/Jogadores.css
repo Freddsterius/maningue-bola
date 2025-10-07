@@ -21,9 +21,9 @@ caption {
   background-color: rgb(250, 250, 250);
   max-width: 90vw;
   margin-bottom: 1rem;
-  border-radius: 0.3rem;
+  /* border-radius: 0.3rem; */
   overflow: hidden;
-  font-size: 0.97rem;
+  font-size: 0.93rem;
 
   /*small*/
   @media (min-width: 576px) {
@@ -58,6 +58,7 @@ caption {
 .jogadores-table td {
   padding: 0.3rem;
   border-bottom: 1px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(204, 204, 204);
 }
 
 .jogadores-table th {
@@ -75,11 +76,13 @@ caption {
 
 .jogadores-table th:nth-child(1) {
   text-align: center;
+  border-left: none;
 }
 
 tr .image-container {
-  background-color: var(--dark); /*decised*/
+  /* background-color: var(--dark);*/ /*decised*/
   text-align: center;
+  border-left: none;
 }
 
 tr .image-container img {
@@ -88,14 +91,10 @@ tr .image-container img {
 }
 
 tr .team-container {
-  vertical-align: middle;
-  background-color: red;
   display: flex;
   align-items: center;
 }
 tr .team-container span {
-  vertical-align: middle;
-  background-color: rgb(68, 0, 255);
   margin-left: 0.2rem;
 }
 
