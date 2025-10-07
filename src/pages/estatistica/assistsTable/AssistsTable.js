@@ -14,7 +14,6 @@ const AssistsTable = ({ topAssisters = [] }) => {
 
   return (
     <div className="AssistsTable-container" id="scrollToAssistsTable">
-      <h3>Melhores Assistentes:</h3>
       <div className="assists-table-container">
         <table className="assists-table">
           <caption>Tabela dos Jogadores</caption>
