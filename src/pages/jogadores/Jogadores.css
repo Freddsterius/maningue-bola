@@ -1,5 +1,6 @@
 .jogadores-container {
   min-height: var(--page-min-height);
+  padding-inline: var(--page-padding-inline);
   background-color: #ffffff; /*undecided*/
 }
 
@@ -18,7 +19,7 @@ caption {
 .jogadores-table {
   margin: 0 auto 1rem;
   background-color: rgb(250, 250, 250);
-  width: 80vw;
+  width: 70vw;
   margin-bottom: 1rem;
   border-radius: 0.3rem;
   overflow: hidden;
@@ -68,10 +69,10 @@ tr .team-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.5rem;
+  column-gap: 0.4rem;
 }
 tr .team-container img {
-  width: 2rem;
+  width: 1.5rem;
   border-radius: 50%;
 }
 
