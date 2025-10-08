@@ -20,9 +20,9 @@ const AssistsTable = ({ topAssisters = [] }) => {
           <thead>
             <tr>
               <th>Posição</th>
-              <th>Nome do Jogador</th>
+              <th>Jogador</th>
               <th>Equipa</th>
-              <th>Assistências Dadas</th>
+              <th>Assistências</th>
             </tr>
           </thead>
 
