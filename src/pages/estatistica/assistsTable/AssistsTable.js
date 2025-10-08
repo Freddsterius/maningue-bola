@@ -44,9 +44,7 @@ const AssistsTable = ({ topAssisters = [] }) => {
                 <td>
                   <b>{assister.teamName}</b>
                 </td>
-                <td>
-                  <b>{assister.assistsProvided}</b>
-                </td>
+                <td>{assister.assistsProvided}</td>
               </tr>
             ))}
           </tbody>
