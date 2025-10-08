@@ -42,7 +42,10 @@ const AssistsTable = ({ topAssisters = [] }) => {
                   </div>
                 </td>
                 <td>
-                  <b>{assister.teamName}</b>
+                  <div className="team-container">
+                    <img src={assister.playerImg} alt={assister.alt} />
+                    <span>{assister.teamName}</span>
+                  </div>
                 </td>
                 <td>{assister.assistsProvided}</td>
               </tr>
