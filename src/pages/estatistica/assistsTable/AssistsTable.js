@@ -32,9 +32,7 @@ const AssistsTable = ({ topAssisters = [] }) => {
                 key={assister.id}
                 className={index < 1 ? "highlightBestAssister" : ""}
               >
-                <td>
-                  <b>{index + 1}</b>
-                </td>
+                <td>{index + 1}</td>
                 <td>
                   <div className="team-container">
                     <img src={assister.playerImg} alt={assister.alt} />
