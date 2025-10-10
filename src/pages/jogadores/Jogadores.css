@@ -81,7 +81,6 @@ caption {
 }
 
 tr .image-container {
-  /* background-color: var(--dark);*/ /*decised*/
   text-align: center;
   border-left: none;
 }
