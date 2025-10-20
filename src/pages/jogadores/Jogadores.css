@@ -25,6 +25,7 @@ caption {
   margin-bottom: 1rem;
   overflow: hidden;
   font-size: 0.93rem;
+  border: none;
 
   /*small*/
   @media (min-width: 576px) {
@@ -61,6 +62,10 @@ caption {
   border-bottom: 1px solid var(--highlight-color1);
   border-left: 1px solid rgb(204, 204, 204);
 }
+.jogadores-table th:nth-child(1),
+.jogadores-table td:nth-child(1) {
+  border-left: none;
+}
 
 .jogadores-table th {
   color: var(--light); /*undecised*/
@@ -78,7 +83,9 @@ caption {
 tr .image-container {
   text-align: center;
   border-left: none;
-  background-color: #4ed470;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
 }
 
 tr .image-container img {
