@@ -78,6 +78,7 @@ caption {
 tr .image-container {
   text-align: center;
   border-left: none;
+  background-color: #4ed470;
 }
 
 tr .image-container img {

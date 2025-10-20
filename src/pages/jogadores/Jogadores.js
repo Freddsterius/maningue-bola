@@ -207,7 +207,6 @@ const Jogadores = () => {
           <caption>Tabela dos Jogadores</caption>
           <thead>
             <tr>
-              <th>Foto</th>
               <th>Jogador</th>
               <th>Posição</th>
               <th>Equipa</th>
@@ -217,11 +216,11 @@ const Jogadores = () => {
           <tbody>
             {sortedPlayers.map((player) => (
               <tr key={player.id}>
-                <td className="image-container">
-                  <img src={player.playerImg} alt={player.alt} />
-                </td>
                 <td>
-                  <b>{player.name}</b>
+                  <div className="image-container">
+                    <img src={player.playerImg} alt={player.alt} />
+                    <p>{player.name}</p>
+                  </div>
                 </td>
                 <td>{player.position}</td>
                 <td>
