@@ -5,7 +5,7 @@
 }
 
 .jogadores-table-container {
-  margin-bottom: 50px; /*undecided*/
+  margin-bottom: 40px; /*undecided*/
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /*to allow horizonatl scroll*/
 }
