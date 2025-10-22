@@ -69,6 +69,77 @@ const topAssisters = [
     teamName: "Kindness FC",
     assistsProvided: 5,
   },
+
+  {
+    id: 11,
+    playerName: "Will Smith",
+    playerImg: require("../assets/images/players/grad1.jpg"),
+    teamName: "Angels FC",
+    assistsProvided: 3,
+  },
+  {
+    id: 12,
+    playerName: "Jackie Chan",
+    playerImg: require("../assets/images/players/grad2.jpg"),
+    teamName: "Dreams FC",
+    assistsProvided: 8,
+  },
+  {
+    id: 13,
+    playerName: "Martin Lawrence",
+    playerImg: require("../assets/images/players/grad3.jpg"),
+    teamName: "Progress FC",
+    assistsProvided: 10,
+  },
+  {
+    id: 14,
+    playerName: "Dwayne 'The Rock' Johnson",
+    playerImg: require("../assets/images/players/grad4.jpg"),
+    teamName: "Success FC",
+    assistsProvided: 3,
+  },
+  {
+    id: 15,
+    playerName: "Kevin Hart",
+    playerImg: require("../assets/images/players/grad5.jpg"),
+    teamName: "Freedom FC",
+    assistsProvided: 4,
+  },
+  {
+    id: 16,
+    playerName: "Ray Raynolds",
+    playerImg: require("../assets/images/players/grad6.jpg"),
+    teamName: "Happiness FC",
+    assistsProvided: 5,
+  },
+  {
+    id: 17,
+    playerName: "Chris Evans",
+    playerImg: require("../assets/images/players/tex1.jpg"),
+    teamName: "Life FC",
+    assistsProvided: 8,
+  },
+  {
+    id: 18,
+    playerName: "Denzel Washington",
+    playerImg: require("../assets/images/players/tex2.jpg"),
+    teamName: "Wellness FC",
+    assistsProvided: 2,
+  },
+  {
+    id: 19,
+    playerName: "John Cena",
+    playerImg: require("../assets/images/players/tex3.jpg"),
+    teamName: "Genius FC",
+    assistsProvided: 6,
+  },
+  {
+    id: 20,
+    playerName: "Shemar Moore",
+    playerImg: require("../assets/images/players/tex4.jpg"),
+    teamName: "Kindness FC",
+    assistsProvided: 5,
+  },
 ];
 
 export default topAssisters;

@@ -16,12 +16,11 @@ const AssistsTable = ({ topAssisters = [] }) => {
     <div className="AssistsTable-container" id="scrollToAssistsTable">
       <div className="assists-table-container">
         <table className="assists-table">
-          <caption>Tabela dos Jogadores</caption>
+          <caption>Tabela das Assistências</caption>
+
           <thead>
             <tr>
-              <th>Posição</th>
               <th>Jogador</th>
-              <th>Equipa</th>
               <th>Assistências</th>
             </tr>
           </thead>
@@ -32,20 +31,32 @@ const AssistsTable = ({ topAssisters = [] }) => {
                 key={assister.id}
                 className={index < 1 ? "highlightBestAssister" : ""}
               >
-                <td>{index + 1}</td>
                 <td>
-                  <div className="team-container">
-                    <img src={assister.playerImg} alt={assister.alt} />
-                    <span>{assister.playerName}</span>
+                  <div className="as-player-container">
+                    <div className="poseition-number-container">
+                      <p>{index + 1}</p>
+                    </div>
+
+                    <div className="as-player-img-container">
+                      <img src={assister.playerImg} alt={assister.alt} />
+                    </div>
+
+                    <div className="as-team-container">
+                      <p>{assister.playerName}</p>
+
+                      <div className="as-name-container">
+                        <img src={assister.playerImg} alt={assister.alt} />
+                        <p>{assister.teamName}</p>
+                      </div>
+                    </div>
                   </div>
                 </td>
+
                 <td>
-                  <div className="team-container">
-                    <img src={assister.playerImg} alt={assister.alt} />
-                    <span>{assister.teamName}</span>
+                  <div className="assist-number">
+                    <p>{assister.assistsProvided}</p>
                   </div>
                 </td>
-                <td>{assister.assistsProvided}</td>
               </tr>
             ))}
           </tbody>
