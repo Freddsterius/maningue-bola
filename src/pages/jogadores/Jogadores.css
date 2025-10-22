@@ -72,7 +72,7 @@ caption {
   text-align: left;
   padding: 1.2rem 0.5rem;
   background-color: var(--primary-color1); /*undecised*/
-  border-bottom: 2px solid #423e3e; /*undecised*/
+  border-bottom: 2px solid #504b4b; /*undecised*/
 }
 
 .jogadores-table th:nth-child(1) {
