@@ -59,5 +59,65 @@ const topScorers = [
     teamName: "Kindness FC",
     goalsScored: 15,
   },
+  {
+    id: 11,
+    playerName: "Archangel",
+    teamName: "Angels FC",
+    goalsScored: 3,
+  },
+  {
+    id: 2,
+    playerName: "Booster Gold",
+    teamName: "Dreams FC",
+    goalsScored: 8,
+  },
+  {
+    id: 13,
+    playerName: "Ghost Rider",
+    teamName: "Progress FC",
+    goalsScored: 10,
+  },
+  {
+    id: 14,
+    playerName: "Human Torch",
+    teamName: "Success FC",
+    goalsScored: 3,
+  },
+  {
+    id: 15,
+    playerName: "Vision",
+    teamName: "Freedom FC",
+    goalsScored: 10,
+  },
+  {
+    id: 16,
+    playerName: "Plastic Man",
+    teamName: "Happiness FC",
+    goalsScored: 10,
+  },
+  {
+    id: 17,
+    playerName: "Martian Manhunter",
+    teamName: "Life FC",
+    goalsScored: 18,
+  },
+  {
+    id: 18,
+    playerName: "Flash",
+    teamName: "Wellness FC",
+    goalsScored: 22,
+  },
+  {
+    id: 19,
+    playerName: "Mr Fantastic",
+    teamName: "Genius FC",
+    goalsScored: 6,
+  },
+  {
+    id: 20,
+    playerName: "Spider-man",
+    teamName: "Kindness FC",
+    goalsScored: 15,
+  },
 ];
 export default topScorers;
