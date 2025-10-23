@@ -1,6 +1,5 @@
 import React from "react";
 import "./Estatistica.css";
-import GoalsTable from "./goalsTable/GoalsTable";
 
 
 import topScorers from "../../data/goalsData";
@@ -14,10 +13,12 @@ const estatistica = () => {
     <div className="estatistica">
       <PageHeading headingName="Estatísticas" />
 
-      <GoalsTable topScorers={topScorers} />
 
+      
 
-      <StatTable topAssisters={topAssisters}/>
+      <StatTable data={topScorers} tableCaption="Tabela de Golos" playerCol="Jogadores" playerStat="Golos"/>
+
+      <StatTable data={topAssisters} tableCaption="Tabela de Assistências" playerCol="Jogadores" playerStat="Assistências"/>
     </div>
   );
 };

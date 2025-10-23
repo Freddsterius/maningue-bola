@@ -1,35 +1,35 @@
 import React from "react";
 import "./StatTable.css";
 
-const StatTable = ({ topAssisters = [] }) => {
-  const sortTopAssisters = () => {
-    return topAssisters.sort((a, b) => {
-      if (a.assistsProvided !== b.assistsProvided) {
-        return b.assistsProvided - a.assistsProvided;
+const StatTable = ({ data = [],tableCaption ,playerCol, playerStat }) => {
+  const sortData = () => {
+    return data.sort((a, b) => {
+      if (a.statNumber !== b.statNumber) {
+        return b.statNumber - a.statNumber;
       }
       return a.playerName.localeCompare(b.playerName);
     });
   };
-  const sortedTopAssisters = sortTopAssisters([...topAssisters]);
+  const sorteddata = sortData([...data]);
 
   return (
     <div className="StatTable-container" id="scrollToStatTable">
       <div className="assists-table-container">
         <table className="assists-table">
-          <caption>Tabela das Assistências</caption>
+          <caption>{tableCaption}</caption>
 
           <thead>
             <tr>
-              <th>Jogador</th>
-              <th>Assistências</th>
+              <th>{playerCol}</th>
+              <th>{playerStat}</th>
             </tr>
           </thead>
 
           <tbody>
-            {sortedTopAssisters.map((assister, index) => (
+            {sorteddata.map((player, index) => (
               <tr
-                key={assister.id}
-                className={index < 1 ? "highlightBestAssister" : ""}
+                key={player.id}
+                className={index < 1 ? "highlightBestplayer" : ""}
               >
                 <td>
                   <div className="as-player-container">
@@ -38,15 +38,15 @@ const StatTable = ({ topAssisters = [] }) => {
                     </div>
 
                     <div className="as-player-img-container">
-                      <img src={assister.playerImg} alt={assister.alt} />
+                      <img src={player.playerImg} alt={player.alt} />
                     </div>
 
                     <div className="as-team-container">
-                      <p>{assister.playerName}</p>
+                      <p className="player-name">{player.playerName}</p>
 
                       <div className="as-name-container">
-                        <img src={assister.playerImg} alt={assister.alt} />
-                        <p>{assister.teamName}</p>
+                        <img src={player.playerImg} alt={player.alt} />
+                        <p>{player.teamName}</p>
                       </div>
                     </div>
                   </div>
@@ -54,7 +54,7 @@ const StatTable = ({ topAssisters = [] }) => {
 
                 <td>
                   <div className="assist-number">
-                    <p>{assister.assistsProvided}</p>
+                    <p>{player.statNumber}</p>
                   </div>
                 </td>
               </tr>

@@ -11,7 +11,6 @@ import Equipas from "../../pages/equipas/Equipas";
 import Inscricao from "../../pages/Inscricao/Inscricao";
 import Sobre from "../../pages/sobre/Sobre";
 
-import GoalsTable from "../../pages/estatistica/goalsTable/GoalsTable";
 import StatTable from "../../components/table/StatTable"
 
 const Main = () => {
@@ -28,8 +27,8 @@ const Main = () => {
         <Route path="/inscricao" element={<Inscricao />} />
         <Route path="/sobre" element={<Sobre />} />
 
-        <Route path="/tabela-golos" element={<GoalsTable />} />
-        <Route path="/tabela-assistencias" element={<StatTable /*topAssisters={topAssisters}*//> } />
+        {/* <Route path="/tabela-golos" element={<StatTable />} />
+        <Route path="/tabela-assistencias" element={<StatTable topAssisters={topAssisters}/> } /> */}
       </Routes>
     </div>
   );

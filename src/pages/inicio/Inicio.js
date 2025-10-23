@@ -4,21 +4,24 @@ import websiteLogo from "../../assets/images/hero/golden-ball.png";
 import { useNavigate } from "react-router-dom";
 import Tabela from "../tabela/Tabela";
 
-import topAssisters from "../../data/assistsData";
+
+import goalsData from "../../data/goalsData";
+import assistsData from "../../data/assistsData";
+
 import StatTable from "../../components/table/StatTable"
-import GoalsTable from "../estatistica/goalsTable/GoalsTable";
+
 
 import standings from "../../data/tabelaData";
-import goalsData from "../../data/goalsData";
-// import assistsData from "../../data/assistsData";
+
+
 
 import PageHeading from "../../components/atoms/pageHeading/PageHeading";
 
 const Inicio = () => {
   const navigate = useNavigate();
   const topFive = standings.slice(0, 5);
-  const topThreeGoals = goalsData.slice(0, 3);
-  const topThreeAssists = topAssisters.slice(0, 3);
+  const topThreeGoals = goalsData.slice(0, 5);
+  const topThreeAssists = assistsData.slice(0, 5);
 
   return (
     <div className="inicio">
@@ -100,14 +103,14 @@ const Inicio = () => {
       </div>
 
       <div className="tabela-table-container-partial">
-        <GoalsTable topScorers={topThreeGoals} />
+        <StatTable data={topThreeGoals} tableCaption="Tabela de Golos" playerCol="Jogadores" playerStat="Golos"/>
         <button onClick={() => navigate("/estatistica#scrollToGoalsTable")}>
           Mais Marcadores⏩
         </button>
       </div>
 
       <div className="assists-table-container-partial">
-        <StatTable topAssisters={topThreeAssists}/> 
+        <StatTable data={topThreeAssists} tableCaption="Tabela de Assistências" playerCol="Jogadores" playerStat="Assistências"/> 
         <button onClick={() => navigate("/estatistica#scrollToAssistsTable")}>
           Mais Assistentes⏩
         </button>
