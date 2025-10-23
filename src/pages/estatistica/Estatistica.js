@@ -7,6 +7,7 @@ import topScorers from "../../data/goalsData";
 import topAssisters from "../../data/assistsData";
 
 import PageHeading from "../../components/atoms/pageHeading/PageHeading";
+import StatTable from "../../components/table/StatTable"
 
 const estatistica = () => {
   return (
@@ -15,6 +16,8 @@ const estatistica = () => {
 
       <GoalsTable topScorers={topScorers} />
       <AssistsTable topAssisters={topAssisters} />
+
+      <StatTable topAssisters={topAssisters}/>
     </div>
   );
 };
