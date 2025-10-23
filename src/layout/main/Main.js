@@ -12,7 +12,7 @@ import Inscricao from "../../pages/Inscricao/Inscricao";
 import Sobre from "../../pages/sobre/Sobre";
 
 import GoalsTable from "../../pages/estatistica/goalsTable/GoalsTable";
-import AssistsTable from "../../pages/estatistica/assistsTable/AssistsTable";
+import StatTable from "../../components/table/StatTable"
 
 const Main = () => {
   return (
@@ -29,7 +29,7 @@ const Main = () => {
         <Route path="/sobre" element={<Sobre />} />
 
         <Route path="/tabela-golos" element={<GoalsTable />} />
-        <Route path="/tabela-assistencias" element={<AssistsTable />} />
+        <Route path="/tabela-assistencias" element={<StatTable /*topAssisters={topAssisters}*//> } />
       </Routes>
     </div>
   );
