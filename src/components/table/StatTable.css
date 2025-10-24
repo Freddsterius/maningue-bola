@@ -68,7 +68,6 @@
   font-weight: bold;
   padding: 1.3rem; */
 
-
   color: var(--light); /*undecised*/
   text-align: left;
   padding: 1.2rem 0.5rem;
@@ -110,20 +109,16 @@
 }
 
 .as-team-container {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
-  
 }
-.as-team-container .player-name{
-  margin-left:0.12rem;
+.as-team-container .player-name {
+  margin-left: 0.12rem;
 }
 .as-name-container {
-  /* background-color: blue; */
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  
 }
 .as-name-container img {
   width: 1.2rem;
