@@ -1,4 +1,4 @@
 .estatistica {
-  height: auto;
+  min-height: var(--page-min-height);
   background-color: rgb(117, 108, 108);
 }
