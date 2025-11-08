@@ -25,7 +25,7 @@ const Sobre = () => {
           </a>
         </p>
         <div className="img-container">
-          <img src={placeholderImg} />
+          <img src={placeholderImg} alt="logotipo de maningue bola" />
         </div>
       </div>
 

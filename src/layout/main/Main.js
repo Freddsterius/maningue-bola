@@ -11,7 +11,7 @@ import Equipas from "../../pages/equipas/Equipas";
 import Inscricao from "../../pages/Inscricao/Inscricao";
 import Sobre from "../../pages/sobre/Sobre";
 
-import StatTable from "../../components/table/StatTable"
+// import StatTable from "../../components/table/StatTable"
 
 const Main = () => {
   return (
