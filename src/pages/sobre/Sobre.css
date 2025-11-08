@@ -6,14 +6,14 @@
 .sobre-container-text {
   margin-top: 1rem;
 
-  background-color: purple; /*unnecessary*/
+  background-color: rgb(231, 247, 159); /*unnecessary*/
 }
 
 .sobre-container-text p {
   color: red;
 }
 .sobre-container .img-container {
-  background-color: brown;
+  background-color: rgb(159, 247, 247);
   display: flex;
   justify-content: center;
   align-items: center;
