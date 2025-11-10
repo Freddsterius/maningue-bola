@@ -13,7 +13,7 @@
   color: red;
 }
 .sobre-container .img-container {
-  background-color: rgb(159, 247, 247);
+  background-color: rgba(208, 235, 58, 1);
   display: flex;
   justify-content: center;
   align-items: center;
