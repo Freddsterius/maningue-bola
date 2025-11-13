@@ -4,31 +4,28 @@
 }
 
 .sobre-container-text {
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  border: 2px solid green;
+  background-color: rgb(245, 245, 245);
+  margin-block: 1rem;
+  padding: 0.5rem;
+  border: 2px solid black;
   border-radius: 8px;
 }
 
 .sobre-container-text p {
-  color: red;
+  color: rgb(0, 0, 0);
 }
 
 .img-container {
-  background-color: aqua;
+  background-color: rgb(245, 245, 245);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  border: 2px solid green;
+  border: 2px solid black;
   border-radius: 8px;
 }
 
 .img-container img {
-  max-width: 80%;
+  max-width: 70%;
 
   /*small*/
 
