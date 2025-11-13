@@ -4,7 +4,7 @@
 }
 
 .sobre-container-text {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(240, 240, 240);
   margin-block: 1rem;
   padding: 0.5rem;
   border: 2px solid black;
@@ -16,7 +16,7 @@
 }
 
 .img-container {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(240, 240, 240);
   display: flex;
   justify-content: center;
   align-items: center;
