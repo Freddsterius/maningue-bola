@@ -12,7 +12,7 @@
   color: red;
 }
 
-.sobre-container .img-container {
+.img-container {
   background-color: orange;
   display: flex;
   justify-content: center;
