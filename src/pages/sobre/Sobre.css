@@ -5,19 +5,21 @@
 
 .sobre-container-text {
   margin-top: 1rem;
-
   background-color: rgb(230, 209, 90); /*unnecessary*/
 }
 
 .sobre-container-text p {
   color: red;
 }
+
 .sobre-container .img-container {
   background-color: orange;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  border: 2px solid green;
+  border-radius: 8px;
 }
 
 .sobre-container-text img {
