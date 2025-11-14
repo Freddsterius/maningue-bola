@@ -5,7 +5,7 @@
 
 .sobre-container-text {
   background-color: rgb(240, 240, 240);
-  margin-block: 1rem;
+  margin-top: 1rem;
   padding: 0.5rem;
   border: 2px solid black;
   border-radius: 8px;
@@ -22,6 +22,7 @@
   align-items: center;
   border: 2px solid black;
   border-radius: 8px;
+  margin-block: 1rem;
 }
 
 .img-container img {
@@ -30,10 +31,13 @@
   /*small*/
 
   /*medium*/
+  @media (min-width: 768px) {
+    max-width: 60%;
+  }
 
   /*large*/
   @media (min-width: 992px) {
-    max-width: 30%;
+    max-width: 35%;
   }
 
   /*extra large*/

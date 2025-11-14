@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: brown;
+  background-color: var(--dark);
   height: auto;
   width: 100%;
   padding: 1rem 0.1rem;
@@ -8,9 +8,10 @@
 }
 
 .footer-logo-conatiner {
-  flex: 1;
+  /* flex: 1; */
+  width: 33%;
 
-  background-color: aqua; /*unnecessary*/
+  /*background-color: aqua;*/ /*unnecessary*/
 }
 .footer-logo-conatiner .footer-logo-link {
   display: flex;
@@ -31,9 +32,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 2;
+  /* flex: 2; */
+  width: 77%;
 
-  background-color: rgb(120, 118, 228); /*unnecessary*/
+  /*background-color: rgb(120, 118, 228);*/ /*unnecessary*/
 }
 
 .footer-text-container p {
