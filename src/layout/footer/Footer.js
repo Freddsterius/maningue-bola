@@ -20,7 +20,8 @@ const Footer = () => {
         <p>
           Desenvolvido por <span className="creator-name">RAIMUNDO.</span>
         </p>
-        <p>Morrumbene, Inhambane, Moçambique; 2025.</p>
+        <p>Morrumbene, Inhambane, Moçambique.</p>
+        <p>2025 - </p>
       </div>
     </div>
   );
