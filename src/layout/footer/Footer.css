@@ -10,7 +10,18 @@
   /* flex: 1; */
   width: 33%;
 
-  /*background-color: aqua;*/ /*unnecessary*/
+  /*small*/
+
+  /*medium*/
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  /*large*/
+
+  /*extra large*/
+
+  /*extra extra large*/
 }
 .footer-logo-conatiner .footer-logo-link {
   display: flex;
@@ -21,9 +32,21 @@
 .footer-logo-conatiner img {
   width: 40%;
 
-  @media (min-width: 900px) {
-    width: 35%;
+  /*small*/
+
+  /*medium*/
+  @media (min-width: 768px) {
+    width: 30%;
   }
+
+  /*large*/
+  @media (min-width: 900px) {
+    width: 20%;
+  }
+
+  /*extra large*/
+
+  /*extra extra large*/
 }
 
 .footer-text-container {
@@ -34,7 +57,18 @@
   /* flex: 2; */
   width: 77%;
 
-  /*background-color: rgb(120, 118, 228);*/ /*unnecessary*/
+  /*small*/
+
+  /*medium*/
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  /*large*/
+
+  /*extra large*/
+
+  /*extra extra large*/
 }
 
 .footer-text-container p {
