@@ -8,7 +8,7 @@
 .page-heading-container h1 {
   width: 60vw;
   color: var(--light);
-  background-color: lightblue; /*undecided*/
+  background-color: rgb(84, 86, 87); /*undecided*/
   border-radius: var(--h1-container-border-radius);
   text-decoration: underline solid;
   border: 1px solid yellow;
