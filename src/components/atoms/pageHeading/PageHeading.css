@@ -8,7 +8,7 @@
 .page-heading-container h1 {
   width: 60vw;
   color: var(--light);
-  background:linear-gradient(90deg, yellow 0%, green 100%) /*undecided*/
+  background:linear-gradient(90deg, yellow 0%, green 100%); /*undecided*/
   border-radius: var(--h1-container-border-radius);
   text-decoration: underline solid;
   border: 1px solid orange; /*undecided*/
