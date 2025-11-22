@@ -11,9 +11,12 @@
   background: linear-gradient(90deg, red, orange); /*undecided*/
   border-radius: var(--h1-container-border-radius);
   text-decoration: underline solid;
-  border: 1px solid linear-gradient(90deg, orange, red); /*undecided*/
   font-size: 1.2rem;
   padding-block: 0.2rem;
+
+  border: 2px solid transparent; /* Set a transparent border to allow the border-image to show through */ /*undecided*/
+  border-image: linear-gradient(90deg, orange, red) 1; /* Apply the gradient and set the slice value to 1 */
+  /*undecided*/
 
   /*small*/
 
