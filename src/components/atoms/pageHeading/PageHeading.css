@@ -11,7 +11,7 @@
   background: linear-gradient(90deg, red, orange); /*undecided*/
   border-radius: var(--h1-container-border-radius);
   text-decoration: underline solid;
-  border: 1px solid orange; /*undecided*/
+  border: 1px solid linear-gradient(90deg, orange, red); /*undecided*/
   font-size: 1.2rem;
   padding-block: 0.2rem;
 
