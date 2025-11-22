@@ -13,10 +13,11 @@
   text-decoration: underline solid;
   font-size: 1.2rem;
   padding-block: 0.2rem;
+  margin-bottom: 1rem;
 
   /* --- Gradient Border Implementation --- */
   /* 1. Use background-clip to ensure the background only covers the padding box */
-  background: linear-gradient(white, white) padding-box,
+  background: linear-gradient(45deg, orange, red) padding-box,
     /* Inner background color */ linear-gradient(90deg, red, orange) border-box; /* Gradient for the border */
 
   /* 2. Set the border-radius (this will now work) */
