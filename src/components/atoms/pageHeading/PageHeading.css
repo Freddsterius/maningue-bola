@@ -18,7 +18,8 @@
   /* --- Gradient Border Implementation --- */
   /* 1. Use background-clip to ensure the background only covers the padding box */
   background: linear-gradient(45deg, orange, red) padding-box,
-    /* Inner background color */ linear-gradient(90deg, red, orange) border-box; /* Gradient for the border */
+    /* Inner background color */ linear-gradient(90deg, red, blue, orange)
+      border-box; /* Gradient for the border */
 
   /* 2. Set the border-radius (this will now work) */
   border-radius: var(--h1-container-border-radius);
