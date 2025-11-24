@@ -84,18 +84,19 @@ button {
     /* background-color: aqua;*/
 
     /* 1. Define the transparent border width first */
-  border: 3px solid transparent;
+    border: 3px solid transparent;
 
-  /* 2. Set the border radius (this will now work) */
-  border-radius: 10px;
+    /* 2. Set the border radius (this will now work) */
+    border-radius: 10px;
 
-  /* 3. Layer the backgrounds: Image background first (clipped to padding-box) */
-  background: url(../../assets/images/hero/stadium-4760441_1920.jpg) center / cover no-repeat padding-box,
-              /* Gradient border second (clipped to border-box) */
-              linear-gradient(90deg, orange, red) border-box;
-}
+    /* 3. Layer the backgrounds: Image background first (clipped to padding-box) */
+    background: url(../../assets/images/hero/stadium-4760441_1920.jpg) center /
+        cover no-repeat padding-box,
+      /* Gradient border second (clipped to border-box) */
+        linear-gradient(90deg, orange, red) border-box;
   }
 }
+
 .maning-bola {
   color: red;
   font-size: 1.5rem;
