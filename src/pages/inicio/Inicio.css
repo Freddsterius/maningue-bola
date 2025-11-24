@@ -93,7 +93,8 @@ button {
     background: url(../../assets/images/hero/stadium-4760441_1920.jpg) center /
         cover no-repeat padding-box,
       /* Gradient border second (clipped to border-box) */
-        linear-gradient(90deg, orange, red) border-box;
+        linear-gradient(90deg, blue, orange, green, red, yellow, purple)
+        border-box;
   }
 }
 
