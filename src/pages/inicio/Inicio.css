@@ -9,17 +9,30 @@
 }
 .website-logo {
   display: flex;
-  border-radius: 10px;
-  border: 3px solid rgb(255, 255, 255);
+  /* border-radius: 10px;
+  border: 3px solid rgb(255, 255, 255); */
   width: 80vw;
   height: 60vh;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../../assets/images/hero/stadium-4760441_1920.jpg);
+  /* background-image: url(../../assets/images/hero/stadium-4760441_1920.jpg); */
   background-size: cover;
   background-position: center;
+
+  /* 1. Define the transparent border width first */
+  border: 3px solid transparent;
+
+  /* 2. Set the border radius (this will now work) */
+  border-radius: 10px;
+
+  /* 3. Layer the backgrounds: Image background first (clipped to padding-box) */
+  background: url(../../assets/images/hero/stadium-4760441_1920.jpg) center /
+      cover no-repeat padding-box,
+    /* Gradient border second (clipped to border-box) */
+      linear-gradient(90deg, orange, red, pink, blue, green, purple) border-box;
 }
+
 .website-logo img {
   width: auto;
   height: auto;
