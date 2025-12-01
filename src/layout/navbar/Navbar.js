@@ -32,7 +32,7 @@ const Navbar = () => {
             alt="logotipo de maninguebola"
             width={100}
           />
-          <h5>maninguebola.vercel.app</h5>
+          <h5>ManingueBola</h5>
         </div>
       </Link>
 
