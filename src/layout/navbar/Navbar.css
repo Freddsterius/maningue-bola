@@ -32,14 +32,16 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  background-color: aquamarine;
 }
 
 .logo img {
   width: 100px;
 }
 .logo h5 {
+  text-decoration: none;
   text-align: center;
-  color: goldenrod;
+  color: rgb(255, 238, 0);
   font-size: 0.5rem;
 }
 
