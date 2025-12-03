@@ -40,8 +40,8 @@
 }
 .logo h5 {
   text-decoration: none;
-  text-align: center;
-  color: rgb(255, 238, 0);
+  margin: 0 auto;
+  color: red;
   font-size: 0.5rem;
 }
 
