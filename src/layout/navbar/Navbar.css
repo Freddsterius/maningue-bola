@@ -28,7 +28,7 @@
 /* Logo section */
 .logo {
   display: flex;
-  text-align: center;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -39,7 +39,7 @@
 }
 .logo h5 {
   text-decoration: none;
-  margin: 0 auto;
+  text-align: center;
   color: red;
   font-size: 0.5rem;
 }
