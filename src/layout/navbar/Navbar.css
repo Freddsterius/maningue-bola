@@ -11,7 +11,7 @@
   right: 0;
   width: 100%;
   z-index: 1000;
-  transition: transform 0.3s ease-in-out; /* Smooth transition for hide/show effect */
+  transition: transform 300ms ease; /* Smooth transition for hide/show effect */
   border-bottom: 2px solid rgb(85, 48, 48);
 }
 
@@ -28,11 +28,10 @@
 /* Logo section */
 .logo {
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  background-color: aquamarine;
 }
 
 .logo img {
