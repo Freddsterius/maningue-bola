@@ -12,13 +12,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding-top: 160px;
+  padding-top: 150px;
   /* text-align: center; */
 
   /*from medium and beyond*/
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     padding-top: 150px;
-  }
+  } */
 }
 
 code {
@@ -57,11 +57,6 @@ code {
 
   /*
 
-
-
-
-
-
   --secondary-color1: #ee9972;
   --secondary-color2: #fbdabb;
 
@@ -74,15 +69,6 @@ code {
 
   /* general images related
   --img-border-radius: 0.625rem;
-
-
-
-
-
-
-
-
-
 
   */
 }
