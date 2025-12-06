@@ -17,7 +17,7 @@
 
   /* --- Gradient Border Implementation --- */
   /* 1. Use background-clip to ensure the background only covers the padding box */
-  background: linear-gradient(45deg, orange, blue, red) padding-box,
+  background: linear-gradient(25deg, orange, blue, red) padding-box,
     /* Inner background color */ linear-gradient(90deg, red, black, orange)
       border-box; /* Gradient for the border */
 
