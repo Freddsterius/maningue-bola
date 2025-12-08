@@ -95,14 +95,14 @@
 .hamburger .bar {
   width: 30px;
   height: 4px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
   margin-right: 10px;
 }
 
 /* Close button in hamburger */
 .hamburger .close {
   font-size: 30px;
-  color: rgb(255, 0, 0); /* Red color for the "X" */
+  color: rgb(255, 51, 51); /* Red color for the "X" */
   cursor: pointer;
   position: absolute;
   top: -5px;
