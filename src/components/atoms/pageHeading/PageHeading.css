@@ -10,7 +10,7 @@
   color: var(--light);
   /* background: linear-gradient(90deg, brown, grey, maroon);*/ /* undecided */
   /* border-radius: var(--h1-container-border-radius); */
-  text-decoration: underline dashed;
+  text-decoration: underline solid; /* dotted dashed */
   font-size: 1.2rem;
   padding-block: 0.2rem;
   margin-bottom: 1rem;
@@ -18,11 +18,11 @@
   /* --- Gradient Border Implementation --- */
   /* 1. Use background-clip to ensure the background only covers the padding box */
   background: linear-gradient(25deg, orange, blue, red) padding-box,
-    /* Inner background color */
-      linear-gradient(90deg, magenta, black, lightseagreen) border-box; /* Gradient for the border */
+    /* Inner background color */ linear-gradient(90deg, magenta, black, aqua)
+      border-box; /* Gradient for the border */
 
   /* 2. Set the border-radius (this will now work) */
-  border-radius: var(--h1-container-border-radius);
+  border-radius: var(--h1-container-border-radius, 12px);
 
   /* 3. Set a transparent border width (the gradient will show through this width) */
   border: 2px solid transparent;
