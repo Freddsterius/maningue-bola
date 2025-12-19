@@ -1,5 +1,5 @@
 .page-heading-container {
-  background-color: var(--light);
+  background-color: var(--light, white);
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
