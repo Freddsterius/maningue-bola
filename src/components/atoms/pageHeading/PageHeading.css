@@ -10,7 +10,7 @@
   color: var(--light);
   /* background: linear-gradient(90deg, brown, grey, maroon);*/ /* undecided */
   /* border-radius: var(--h1-container-border-radius); */
-  text-decoration: underline solid; /* dotted dashed */
+  text-decoration: underline wavy; /* solid dotted dashed wavy */
   font-size: 1.2rem;
   padding-block: 0.2rem;
   margin-bottom: 1rem;
