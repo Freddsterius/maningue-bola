@@ -197,7 +197,7 @@ const Tabela = ({ data = [] }) => {
               <th>Jogos Empatados</th>
               <th>Jogos Perdidos</th>
               <th>Golos Marcados</th>
-              <th>Golos Marcados</th>
+              <th>Golos Sofridos</th>
               <th>Diferença de Golos</th>
             </tr>
           </thead>
